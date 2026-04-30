@@ -1,0 +1,601 @@
+HISTÓRICO VALIDADO DEMO - 100 CASOS
+
+Caso 1 | HVAC | Pérdida De Presión Positiva
+  Alternativa final: Conmutación parcial a UTA redundante
+  Funcionó: Sí | Tiempo real: 44.2 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Presión Positiva. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=2.5 (N/A); (N2) ΔP_filtro HEPA (Pa)=15 (N/A); (N2) Temperatura de sala (°C)=24 (N/A); (N2) Caudal retorno (m3/h)=700 (N/A)
+  Solución: Conmutación parcial a UTA redundante
+
+Caso 2 | SCADA/BMS | Pérdida De Comunicación
+  Alternativa final: Reinicio controlado de gateway/controlador
+  Funcionó: Sí | Tiempo real: 50.3 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Comunicación. Variables críticas observadas: (N1) Estado gateway/servidor=fallo (N/A); (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Reinicio controlado de gateway/controlador
+
+Caso 3 | GASES | Caída De Presión O₂
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 67.35 min
+  Causa raíz: Caso validado de ejemplo asociado a Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=1.5 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Estado aislamiento IT=en alarma (Oscila); (N1) Botella reserva=disponible y estable (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 4 | SCADA/BMS | Fallo De Servidor BMS
+  Alternativa final: Reinicio controlado del servidor BMS
+  Funcionó: Sí | Tiempo real: 54.07 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo De Servidor BMS. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=40 (N/A); (N2) ΔP_filtro HEPA (Pa)=40 (N/A); (N1) Estado gateway/servidor=error (Oscila); (N1) Alarma central=activa y estable (Estable)
+  Solución: Reinicio controlado del servidor BMS
+
+Caso 5 | SCADA/BMS | Sensor Errático
+  Alternativa final: Validación cruzada con sonda redundante/local
+  Funcionó: Sí | Tiempo real: 59.1 min
+  Causa raíz: Caso validado de ejemplo asociado a Sensor Errático. Variables críticas observadas: (N2) Temperatura de sala (°C)=28.5 (N/A); (N2) Humedad relativa (%)=0.7 (N/A); (N1) Estado gateway/servidor=activo y estable (Estable); (N1) Sonda redundante=no disponible (Estable)
+  Solución: Validación cruzada con sonda redundante/local
+
+Caso 6 | ELECTRICO | Fallo ATS
+  Alternativa final: Reintento manual de conmutación ATS
+  Funcionó: Sí | Tiempo real: 69.72 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo ATS. Variables críticas observadas: (N1) Estado ATS=fallo (N/A); (N1) Línea emergencia=no disponible (Estable); (N1) Botella reserva=disponible y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Reintento manual de conmutación ATS
+
+Caso 7 | HVAC | Temperatura Fuera De Rango
+  Alternativa final: Ajuste setpoint y válvula
+  Funcionó: Sí | Tiempo real: 33.52 min
+  Causa raíz: Caso validado de ejemplo asociado a Temperatura Fuera De Rango. Variables críticas observadas: (N2) Temperatura de sala (°C)=25.5 (N/A); (N2) Humedad relativa (%)=0.35 (N/A); (N2) Caudal impulsión (m3/h)=500 (N/A); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste setpoint y válvula
+
+Caso 8 | GASES | Vacío Medicinal / Aspiración
+  Alternativa final: Activación de bomba redundante
+  Funcionó: Sí | Tiempo real: 57.92 min
+  Causa raíz: Caso validado de ejemplo asociado a Vacío Medicinal / Aspiración. Variables críticas observadas: (N2) Presión vacío=480 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Activación de bomba redundante
+
+Caso 9 | GASES | Oscilación De Aire Medicinal
+  Alternativa final: Ajuste de regulador local
+  Funcionó: Sí | Tiempo real: 59.37 min
+  Causa raíz: Caso validado de ejemplo asociado a Oscilación De Aire Medicinal. Variables críticas observadas: (N2) Presión aire medicinal (bar)=6.5 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Botella reserva=disponible y estable (Estable); (N2) Consumo eléctrico (kW)=1.8 (N/A)
+  Solución: Ajuste de regulador local
+
+Caso 10 | ELECTRICO | Alarma IMD / Aislamiento
+  Alternativa final: Búsqueda de defecto por ramas
+  Funcionó: Sí | Tiempo real: 62.72 min
+  Causa raíz: Caso validado de ejemplo asociado a Alarma IMD / Aislamiento. Variables críticas observadas: (N2) Caudal impulsión (m3/h)=2100 (N/A); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=sí, estable (Estable); (N1) Estado aislamiento IT=fallo (N/A)
+  Solución: Búsqueda de defecto por ramas
+
+Caso 11 | SCADA/BMS | Aumento De Temperatura
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 54.02 min
+  Causa raíz: Caso validado de ejemplo asociado a Aumento De Temperatura. Variables críticas observadas: (N2) Temperatura de sala (°C)=26.2 (N/A); (N2) Temperatura impulsión (°C)=24.2 (N/A); (N2) Humedad relativa (%)=58 (N/A); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 12 | HVAC | Fallo De Suministro Eléctrico
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 53.47 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo De Suministro Eléctrico. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 13 | HVAC | Caída De Presión O₂
+  Alternativa final: Conmutación parcial a UTA redundante
+  Funcionó: Sí | Tiempo real: 44.3 min
+  Causa raíz: Caso validado de ejemplo asociado a Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=3.8 (N/A); (N1) Botella reserva=activada (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación parcial a UTA redundante
+
+Caso 14 | SCADA/BMS | Pérdida De Monitorización
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 60.55 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Monitorización. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 15 | ELECTRICO | Pérdida De Presión Diferencial
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 32.37 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Presión Diferencial. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=2 (N/A); (N2) ΔP_filtro HEPA (Pa)=40 (Sube); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 16 | ELECTRICO | Rendimiento Degradado UTA
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 33.15 min
+  Causa raíz: Caso validado de ejemplo asociado a Rendimiento Degradado UTA. Variables críticas observadas: (N2) Temperatura impulsión (°C)=22.5 (N/A); (N2) Caudal impulsión (m3/h)=-25 (N/A); (N1) Modo UTA=automático (N/A); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 17 | SCADA/BMS | UPS En Bypass
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 62.8 min
+  Causa raíz: Caso validado de ejemplo asociado a UPS En Bypass. Variables críticas observadas: (N1) Estado UPS=bypass automático activado (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 18 | SCADA/BMS | Vacío Quirúrgico
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 47.37 min
+  Causa raíz: Caso validado de ejemplo asociado a Vacío Quirúrgico. Variables críticas observadas: (N2) Presión vacío=-0.45 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 19 | GASES | Humedad Fuera De Rango
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 65.93 min
+  Causa raíz: Caso validado de ejemplo asociado a Humedad Fuera De Rango. Variables críticas observadas: (N2) Temperatura de sala (°C)=23 (N/A); (N2) Humedad relativa (%)=68 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 20 | SCADA/BMS | Saturación De Red De Comunicaciones
+  Alternativa final: Segmentación temporal de tráfico crítico
+  Funcionó: Sí | Tiempo real: 43.88 min
+  Causa raíz: Caso validado de ejemplo asociado a Saturación De Red De Comunicaciones. Variables críticas observadas: (N1) Alarma central=activa de forma intermitente (Oscila); (N2) Latencia de red (ms)=450 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Segmentación temporal de tráfico crítico
+
+Caso 21 | SCADA/BMS | Humedad Fuera De Rango
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 55.6 min
+  Causa raíz: Caso validado de ejemplo asociado a Humedad Fuera De Rango. Variables críticas observadas: (N2) Temperatura impulsión (°C)=22 (N/A); (N2) Humedad relativa (%)=67 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 22 | SCADA/BMS | UPS En Estado Degradado
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 43.23 min
+  Causa raíz: Caso validado de ejemplo asociado a UPS En Estado Degradado. Variables críticas observadas: (N1) Estado UPS=en alarma (Oscila); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=sí, estable (Estable); (N2) Consumo eléctrico (kW)=18 (N/A)
+  Solución: Validación local de variables críticas
+
+Caso 23 | HVAC | Inconsistencia De Lectura Ambiental
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 75.78 min
+  Causa raíz: Caso validado de ejemplo asociado a Inconsistencia De Lectura Ambiental. Variables críticas observadas: (N2) Temperatura de sala (°C)=23 (N/A); (N1) Estado gateway/servidor=activo y estable (Estable); (N1) Sonda redundante=disponible y estable (Estable); (N1) Alarma central=activa de forma intermitente (Oscila)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 24 | SCADA/BMS | Reserva Activa Por Caída De Presión O₂
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 40.58 min
+  Causa raíz: Caso validado de ejemplo asociado a Reserva Activa Por Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=3.6 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Botella reserva=activa y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 25 | GASES | Saturación De Filtro Hepa
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 40.47 min
+  Causa raíz: Caso validado de ejemplo asociado a Saturación De Filtro Hepa. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=4 (N/A); (N2) ΔP_filtro HEPA (Pa)=42 (N/A); (N2) Caudal impulsión (m3/h)=1800 (N/A); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 26 | GASES | Prealarma De Aislamiento It
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 56.08 min
+  Causa raíz: Caso validado de ejemplo asociado a Prealarma De Aislamiento It. Variables críticas observadas: (N1) Estado UPS=activo y estable (Estable); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado aislamiento IT=alarma con comportamiento oscilante (Oscila)
+  Solución: Conmutación a reserva disponible
+
+Caso 27 | SCADA/BMS | Vacío Inestable En Alta Demanda
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 52.72 min
+  Causa raíz: Caso validado de ejemplo asociado a Vacío Inestable En Alta Demanda. Variables críticas observadas: (N2) Presión vacío=-420 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 28 | ELECTRICO | Pérdida Parcial De Supervisión
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 47.28 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida Parcial De Supervisión. Variables críticas observadas: (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 29 | SCADA/BMS | Retorno Térmico Elevado
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 39.33 min
+  Causa raíz: Caso validado de ejemplo asociado a Retorno Térmico Elevado. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.8 (N/A); (N2) Caudal retorno (m3/h)=900 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 30 | GASES | Calidad De Aire / VOC Fuera De Rango
+  Alternativa final: Ajuste de regulador local
+  Funcionó: Sí | Tiempo real: 68.72 min
+  Causa raíz: Caso validado de ejemplo asociado a Calidad De Aire / VOC Fuera De Rango. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=6 (N/A); (N2) Caudal impulsión (m3/h)=1900 (N/A); (N1) Alarma central=activa y estable (Estable); (N2) VOC (ppb)=650 (N/A)
+  Solución: Ajuste de regulador local
+
+Caso 31 | GASES | Pérdida De Presión Diferencial Progresiva
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 57.77 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Presión Diferencial Progresiva. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=3 (N/A); (N2) ΔP_filtro HEPA (Pa)=38 (N/A); (N2) Caudal impulsión (m3/h)=1750 (N/A); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 32 | ELECTRICO | Disparo Intermitente De UPS
+  Alternativa final: Bypass controlado a línea segura
+  Funcionó: Sí | Tiempo real: 54.1 min
+  Causa raíz: Caso validado de ejemplo asociado a Disparo Intermitente De UPS. Variables críticas observadas: (N1) Estado UPS=en alarma (Oscila); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Bypass controlado a línea segura
+
+Caso 33 | ELECTRICO | Latencia Elevada En Comunicaciones
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 65.92 min
+  Causa raíz: Caso validado de ejemplo asociado a Latencia Elevada En Comunicaciones. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 34 | HVAC | Consumo Elevado De O₂
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 54.0 min
+  Causa raíz: Caso validado de ejemplo asociado a Consumo Elevado De O₂. Variables críticas observadas: (N2) Presión O2 (bar)=4.2 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 35 | HVAC | Fallo En Registro Histórico De Datos
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 42.85 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo En Registro Histórico De Datos. Variables críticas observadas: (N1) Alarma central=inactiva (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 36 | GASES | Desequilibrio De Cargas
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 55.83 min
+  Causa raíz: Caso validado de ejemplo asociado a Desequilibrio De Cargas. Variables críticas observadas: (N2) ΔP_filtro HEPA (Pa)=25 (Sube); (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 37 | ELECTRICO | Fuga Potencial En Circuito
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 37.22 min
+  Causa raíz: Caso validado de ejemplo asociado a Fuga Potencial En Circuito. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 38 | ELECTRICO | Fallo Parcial De Servidor
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 38.52 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo Parcial De Servidor. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Modo UTA=activo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 39 | HVAC | Caudal De Impulsión Reducido
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 46.1 min
+  Causa raíz: Caso validado de ejemplo asociado a Caudal De Impulsión Reducido. Variables críticas observadas: (N2) Temperatura de sala (°C)=23.5 (N/A); (N2) Caudal impulsión (m3/h)=-20 (N/A); (N1) Modo UTA=activo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 40 | GASES | Desincronización Horaria
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 47.02 min
+  Causa raíz: Caso validado de ejemplo asociado a Desincronización Horaria. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 41 | HVAC | Aumento De Temperatura Con Bajo Caudal
+  Alternativa final: Ajuste setpoint y válvula
+  Funcionó: Sí | Tiempo real: 37.28 min
+  Causa raíz: Caso validado de ejemplo asociado a Aumento De Temperatura Con Bajo Caudal. Variables críticas observadas: (N2) Temperatura de sala (°C)=25.8 (N/A); (N2) Temperatura impulsión (°C)=23.5 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste setpoint y válvula
+
+Caso 42 | GASES | Falla Parcial En Línea De Emergencia
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 42.55 min
+  Causa raíz: Caso validado de ejemplo asociado a Falla Parcial En Línea De Emergencia. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible pero con comportamiento inestable (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 43 | HVAC | Pérdida De Sincronización De Datos
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 50.38 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Sincronización De Datos. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 44 | HVAC | Descenso Lento De Presión O₂
+  Alternativa final: Conmutación parcial a UTA redundante
+  Funcionó: Sí | Tiempo real: 37.07 min
+  Causa raíz: Caso validado de ejemplo asociado a Descenso Lento De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=4 (N/A); (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación parcial a UTA redundante
+
+Caso 45 | SCADA/BMS | Incremento De Δp En Filtro Sin Impacto Inmediato
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 46.92 min
+  Causa raíz: Caso validado de ejemplo asociado a Incremento De Δp En Filtro Sin Impacto Inmediato. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 46 | SCADA/BMS | Sobrecarga Puntual Del Sistema
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 46.48 min
+  Causa raíz: Caso validado de ejemplo asociado a Sobrecarga Puntual Del Sistema. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 47 | HVAC | Oscilación De Vacío Medicinal
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 55.4 min
+  Causa raíz: Caso validado de ejemplo asociado a Oscilación De Vacío Medicinal. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 48 | ELECTRICO | Recuperación Parcial De Comunicación
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 60.48 min
+  Causa raíz: Caso validado de ejemplo asociado a Recuperación Parcial De Comunicación. Variables críticas observadas: (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 49 | GASES | Humedad Baja En Sala
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 59.48 min
+  Causa raíz: Caso validado de ejemplo asociado a Humedad Baja En Sala. Variables críticas observadas: (N2) Temperatura de sala (°C)=22.5 (N/A); (N2) Humedad relativa (%)=32 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 50 | ELECTRICO | Fallo En Polling De Sensores
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 52.62 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo En Polling De Sensores. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 51 | GASES | Inestabilidad En Control De Temperatura
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 56.17 min
+  Causa raíz: Caso validado de ejemplo asociado a Inestabilidad En Control De Temperatura. Variables críticas observadas: (N2) Temperatura de sala (°C)=23.8 (N/A); (N2) Temperatura impulsión (°C)=22 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 52 | GASES | Recuperación Inestable Tras Conmutación
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 51.15 min
+  Causa raíz: Caso validado de ejemplo asociado a Recuperación Inestable Tras Conmutación. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo tras conmutación (Estable); (N1) Línea emergencia=operativa con pequeñas fluctuaciones (Oscila); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 53 | SCADA/BMS | Retardo En Actualización De Variables
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 34.57 min
+  Causa raíz: Caso validado de ejemplo asociado a Retardo En Actualización De Variables. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 54 | ELECTRICO | Activación Frecuente De Reserva
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 53.4 min
+  Causa raíz: Caso validado de ejemplo asociado a Activación Frecuente De Reserva. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=activaciones repetidas (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 55 | ELECTRICO | Cola De Eventos Saturada
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 45.47 min
+  Causa raíz: Caso validado de ejemplo asociado a Cola De Eventos Saturada. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 56 | ELECTRICO | Oscilación De Tensión En Línea Principal
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 56.47 min
+  Causa raíz: Caso validado de ejemplo asociado a Oscilación De Tensión En Línea Principal. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 57 | SCADA/BMS | Disminución De Vacío En Demanda Variable
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 58.32 min
+  Causa raíz: Caso validado de ejemplo asociado a Disminución De Vacío En Demanda Variable. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 58 | HVAC | Pérdida Temporal De Histórico
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 46.02 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida Temporal De Histórico. Variables críticas observadas: (N1) Alarma central=inactiva (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 59 | HVAC | Desviación De Humedad Con Temperatura Estable
+  Alternativa final: Ajuste setpoint y válvula
+  Funcionó: Sí | Tiempo real: 65.33 min
+  Causa raíz: Caso validado de ejemplo asociado a Desviación De Humedad Con Temperatura Estable. Variables críticas observadas: (N2) Humedad relativa (%)=65 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste setpoint y válvula
+
+Caso 60 | HVAC | Error En Escritura De Variables
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 45.17 min
+  Causa raíz: Caso validado de ejemplo asociado a Error En Escritura De Variables. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 61 | GASES | Respuesta Lenta Del Sistema Térmico
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 38.27 min
+  Causa raíz: Caso validado de ejemplo asociado a Respuesta Lenta Del Sistema Térmico. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.5 (N/A); (N2) Temperatura impulsión (°C)=22 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 62 | HVAC | Retardo En Conmutación ATS
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 45.3 min
+  Causa raíz: Caso validado de ejemplo asociado a Retardo En Conmutación ATS. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo con retardo de respuesta (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 63 | GASES | Inconsistencia En Alarmas
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 63.3 min
+  Causa raíz: Caso validado de ejemplo asociado a Inconsistencia En Alarmas. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=comportamiento incoherente (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 64 | SCADA/BMS | Variación De Presión En Demanda
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 36.42 min
+  Causa raíz: Caso validado de ejemplo asociado a Variación De Presión En Demanda. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 65 | SCADA/BMS | Desajuste Entre Impulsión Y Retorno
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 42.35 min
+  Causa raíz: Caso validado de ejemplo asociado a Desajuste Entre Impulsión Y Retorno. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 66 | ELECTRICO | Falla Temporal Del UPS
+  Alternativa final: Bypass controlado a línea segura
+  Funcionó: Sí | Tiempo real: 60.73 min
+  Causa raíz: Caso validado de ejemplo asociado a Falla Temporal Del UPS. Variables críticas observadas: (N1) Estado UPS=recuperación tras fallo (N/A); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Bypass controlado a línea segura
+
+Caso 67 | SCADA/BMS | Respuesta Lenta Del Sistema De Vacío
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 49.57 min
+  Causa raíz: Caso validado de ejemplo asociado a Respuesta Lenta Del Sistema De Vacío. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 68 | HVAC | Reinicio Espontáneo De Sistema
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 60.13 min
+  Causa raíz: Caso validado de ejemplo asociado a Reinicio Espontáneo De Sistema. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 69 | ELECTRICO | Oscilación De Humedad Y Temperatura
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 59.12 min
+  Causa raíz: Caso validado de ejemplo asociado a Oscilación De Humedad Y Temperatura. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 70 | GASES | Pérdida De Sincronización Con Dispositivos
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 54.18 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Sincronización Con Dispositivos. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 71 | ELECTRICO | Desviación Térmica En Condiciones Estables
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 44.42 min
+  Causa raíz: Caso validado de ejemplo asociado a Desviación Térmica En Condiciones Estables. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.7 (N/A); (N2) Temperatura impulsión (°C)=22.5 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 72 | HVAC | Anomalía En Distribución De Carga
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 64.33 min
+  Causa raíz: Caso validado de ejemplo asociado a Anomalía En Distribución De Carga. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 73 | GASES | Degradación Progresiva De Comunicaciones
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 44.75 min
+  Causa raíz: Caso validado de ejemplo asociado a Degradación Progresiva De Comunicaciones. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 74 | GASES | Variación De Suministro En Pico De Demanda
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 60.02 min
+  Causa raíz: Caso validado de ejemplo asociado a Variación De Suministro En Pico De Demanda. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 75 | SCADA/BMS | Inestabilidad En Caudal De Impulsión
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 56.13 min
+  Causa raíz: Caso validado de ejemplo asociado a Inestabilidad En Caudal De Impulsión. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 76 | SCADA/BMS | Recuperación Parcial De Sistema UPS
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 62.18 min
+  Causa raíz: Caso validado de ejemplo asociado a Recuperación Parcial De Sistema UPS. Variables críticas observadas: (N1) Estado UPS=operativo con limitaciones (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 77 | HVAC | Descenso Lento De Vacío
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 42.53 min
+  Causa raíz: Caso validado de ejemplo asociado a Descenso Lento De Vacío. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 78 | HVAC | Fallo Intermitente De Servidor
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 54.33 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo Intermitente De Servidor. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 79 | GASES | Variación De Humedad En Rango Límite
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 58.15 min
+  Causa raíz: Caso validado de ejemplo asociado a Variación De Humedad En Rango Límite. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 80 | SCADA/BMS | Fallo En Servicio De Alarmas
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 54.8 min
+  Causa raíz: Caso validado de ejemplo asociado a Fallo En Servicio De Alarmas. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 81 | GASES | Intermitencia En Base De Datos
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 58.05 min
+  Causa raíz: Caso validado de ejemplo asociado a Intermitencia En Base De Datos. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 82 | HVAC | Desequilibrio Entre Líneas De Suministro
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 34.92 min
+  Causa raíz: Caso validado de ejemplo asociado a Desequilibrio Entre Líneas De Suministro. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 83 | HVAC | Latencia Variable En Monitorización
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 65.28 min
+  Causa raíz: Caso validado de ejemplo asociado a Latencia Variable En Monitorización. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 84 | ELECTRICO | Respuesta Irregular Del Suministro O₂
+  Alternativa final: Mantener línea de emergencia y verificar grupo
+  Funcionó: Sí | Tiempo real: 61.67 min
+  Causa raíz: Caso validado de ejemplo asociado a Respuesta Irregular Del Suministro O₂. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Mantener línea de emergencia y verificar grupo
+
+Caso 85 | HVAC | Variación De Presión Diferencial Sin Causa Clara
+  Alternativa final: Conmutación parcial a UTA redundante
+  Funcionó: Sí | Tiempo real: 36.82 min
+  Causa raíz: Caso validado de ejemplo asociado a Variación De Presión Diferencial Sin Causa Clara. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación parcial a UTA redundante
+
+Caso 86 | GASES | Recuperación Incompleta Tras Evento
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 47.58 min
+  Causa raíz: Caso validado de ejemplo asociado a Recuperación Incompleta Tras Evento. Variables críticas observadas: (N1) Estado UPS=operativo con limitaciones (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 87 | ELECTRICO | Fluctuación De Vacío En Operación Continua
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 52.65 min
+  Causa raíz: Caso validado de ejemplo asociado a Fluctuación De Vacío En Operación Continua. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 88 | SCADA/BMS | Desincronización De Variables
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 39.83 min
+  Causa raíz: Caso validado de ejemplo asociado a Desincronización De Variables. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 89 | ELECTRICO | Respuesta Irregular Del Control Higrométrico
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 48.58 min
+  Causa raíz: Caso validado de ejemplo asociado a Respuesta Irregular Del Control Higrométrico. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 90 | GASES | Operación En Condiciones Límite
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 57.27 min
+  Causa raíz: Caso validado de ejemplo asociado a Operación En Condiciones Límite. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 91 | ELECTRICO | Saturación Progresiva Del Sistema De Frío
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 56.58 min
+  Causa raíz: Caso validado de ejemplo asociado a Saturación Progresiva Del Sistema De Frío. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.6 (N/A); (N2) Temperatura impulsión (°C)=23 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 92 | HVAC | Incremento Anómalo De Consumo
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 49.53 min
+  Causa raíz: Caso validado de ejemplo asociado a Incremento Anómalo De Consumo. Variables críticas observadas: (N2) ΔP_filtro HEPA (Pa)=25 (Sube); (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 93 | HVAC | Pérdida Parcial De Variables Críticas
+  Alternativa final: Ajuste operativo BMS/HVAC
+  Funcionó: Sí | Tiempo real: 56.23 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida Parcial De Variables Críticas. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Ajuste operativo BMS/HVAC
+
+Caso 94 | GASES | Descenso De Presión En Condición Sostenida
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 69.85 min
+  Causa raíz: Caso validado de ejemplo asociado a Descenso De Presión En Condición Sostenida. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 95 | SCADA/BMS | Pérdida De Estabilidad En Control De Aire
+  Alternativa final: Validación local de variables críticas
+  Funcionó: Sí | Tiempo real: 51.57 min
+  Causa raíz: Caso validado de ejemplo asociado a Pérdida De Estabilidad En Control De Aire. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Validación local de variables críticas
+
+Caso 96 | GASES | Degradación Progresiva Del UPS
+  Alternativa final: Conmutación a reserva disponible
+  Funcionó: Sí | Tiempo real: 43.97 min
+  Causa raíz: Caso validado de ejemplo asociado a Degradación Progresiva Del UPS. Variables críticas observadas: (N1) Estado UPS=degradado (N/A); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Conmutación a reserva disponible
+
+Caso 97 | ELECTRICO | Inestabilidad En Sistema De Vacío
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 55.87 min
+  Causa raíz: Caso validado de ejemplo asociado a Inestabilidad En Sistema De Vacío. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 98 | ELECTRICO | Intermitencia En Adquisición De Datos
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 49.4 min
+  Causa raíz: Caso validado de ejemplo asociado a Intermitencia En Adquisición De Datos. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 99 | ELECTRICO | Desviación Combinada De Variables Ambientales
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 55.63 min
+  Causa raíz: Caso validado de ejemplo asociado a Desviación Combinada De Variables Ambientales. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura
+
+Caso 100 | ELECTRICO | Saturación De Cpu Del Servidor
+  Alternativa final: Transferencia temporal a línea segura
+  Funcionó: Sí | Tiempo real: 54.52 min
+  Causa raíz: Caso validado de ejemplo asociado a Saturación De Cpu Del Servidor. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)
+  Solución: Transferencia temporal a línea segura

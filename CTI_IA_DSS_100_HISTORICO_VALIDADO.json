@@ -10,7 +10,13 @@
     "tiempo": 44.2,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Presión Positiva. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=2.5 (N/A); (N2) ΔP_filtro HEPA (Pa)=15 (N/A); (N2) Temperatura de sala (°C)=24 (N/A); (N2) Caudal retorno (m3/h)=700 (N/A)",
     "solucion": "Conmutación parcial a UTA redundante",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Presión Positiva) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Presión Positiva) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación parcial a UTA redundante",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 44.2,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Presión Positiva. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=2.5 (N/A); (N2) ΔP_filtro HEPA (Pa)=15 (N/A); (N2) Temperatura de sala (°C)=24 (N/A); (N2) Caudal retorno (m3/h)=700 (N/A)",
+    "solucion_real": "Conmutación parcial a UTA redundante",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Presión Positiva) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:02:00.000Z",
@@ -23,7 +29,13 @@
     "tiempo": 50.3,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Comunicación. Variables críticas observadas: (N1) Estado gateway/servidor=fallo (N/A); (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Reinicio controlado de gateway/controlador",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Comunicación) y prioriza 'Reinicio controlado de gateway/controlador' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Comunicación) y prioriza 'Reinicio controlado de gateway/controlador' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Reinicio controlado de gateway/controlador",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 50.3,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Comunicación. Variables críticas observadas: (N1) Estado gateway/servidor=fallo (N/A); (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Reinicio controlado de gateway/controlador",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Comunicación) y prioriza 'Reinicio controlado de gateway/controlador' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:03:00.000Z",
@@ -36,7 +48,13 @@
     "tiempo": 67.35,
     "causa": "Caso validado de ejemplo asociado a Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=1.5 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Estado aislamiento IT=en alarma (Oscila); (N1) Botella reserva=disponible y estable (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 67.35,
+    "causa_raiz": "Caso validado de ejemplo asociado a Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=1.5 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Estado aislamiento IT=en alarma (Oscila); (N1) Botella reserva=disponible y estable (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:04:00.000Z",
@@ -49,7 +67,13 @@
     "tiempo": 54.07,
     "causa": "Caso validado de ejemplo asociado a Fallo De Servidor BMS. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=40 (N/A); (N2) ΔP_filtro HEPA (Pa)=40 (N/A); (N1) Estado gateway/servidor=error (Oscila); (N1) Alarma central=activa y estable (Estable)",
     "solucion": "Reinicio controlado del servidor BMS",
-    "obs": "El CTI integra variables críticas del caso (Fallo De Servidor BMS) y prioriza 'Reinicio controlado del servidor BMS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fallo De Servidor BMS) y prioriza 'Reinicio controlado del servidor BMS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Reinicio controlado del servidor BMS",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.07,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo De Servidor BMS. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=40 (N/A); (N2) ΔP_filtro HEPA (Pa)=40 (N/A); (N1) Estado gateway/servidor=error (Oscila); (N1) Alarma central=activa y estable (Estable)",
+    "solucion_real": "Reinicio controlado del servidor BMS",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo De Servidor BMS) y prioriza 'Reinicio controlado del servidor BMS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:05:00.000Z",
@@ -62,7 +86,13 @@
     "tiempo": 59.1,
     "causa": "Caso validado de ejemplo asociado a Sensor Errático. Variables críticas observadas: (N2) Temperatura de sala (°C)=28.5 (N/A); (N2) Humedad relativa (%)=0.7 (N/A); (N1) Estado gateway/servidor=activo y estable (Estable); (N1) Sonda redundante=no disponible (Estable)",
     "solucion": "Validación cruzada con sonda redundante/local",
-    "obs": "El CTI integra variables críticas del caso (Sensor Errático) y prioriza 'Validación cruzada con sonda redundante/local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Sensor Errático) y prioriza 'Validación cruzada con sonda redundante/local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación cruzada con sonda redundante/local",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 59.1,
+    "causa_raiz": "Caso validado de ejemplo asociado a Sensor Errático. Variables críticas observadas: (N2) Temperatura de sala (°C)=28.5 (N/A); (N2) Humedad relativa (%)=0.7 (N/A); (N1) Estado gateway/servidor=activo y estable (Estable); (N1) Sonda redundante=no disponible (Estable)",
+    "solucion_real": "Validación cruzada con sonda redundante/local",
+    "observaciones": "El CTI integra variables críticas del caso (Sensor Errático) y prioriza 'Validación cruzada con sonda redundante/local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:06:00.000Z",
@@ -75,7 +105,13 @@
     "tiempo": 69.72,
     "causa": "Caso validado de ejemplo asociado a Fallo ATS. Variables críticas observadas: (N1) Estado ATS=fallo (N/A); (N1) Línea emergencia=no disponible (Estable); (N1) Botella reserva=disponible y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Reintento manual de conmutación ATS",
-    "obs": "El CTI integra variables críticas del caso (Fallo ATS) y prioriza 'Reintento manual de conmutación ATS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fallo ATS) y prioriza 'Reintento manual de conmutación ATS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Reintento manual de conmutación ATS",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 69.72,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo ATS. Variables críticas observadas: (N1) Estado ATS=fallo (N/A); (N1) Línea emergencia=no disponible (Estable); (N1) Botella reserva=disponible y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Reintento manual de conmutación ATS",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo ATS) y prioriza 'Reintento manual de conmutación ATS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:07:00.000Z",
@@ -88,7 +124,13 @@
     "tiempo": 33.52,
     "causa": "Caso validado de ejemplo asociado a Temperatura Fuera De Rango. Variables críticas observadas: (N2) Temperatura de sala (°C)=25.5 (N/A); (N2) Humedad relativa (%)=0.35 (N/A); (N2) Caudal impulsión (m3/h)=500 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste setpoint y válvula",
-    "obs": "El CTI integra variables críticas del caso (Temperatura Fuera De Rango) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Temperatura Fuera De Rango) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste setpoint y válvula",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 33.52,
+    "causa_raiz": "Caso validado de ejemplo asociado a Temperatura Fuera De Rango. Variables críticas observadas: (N2) Temperatura de sala (°C)=25.5 (N/A); (N2) Humedad relativa (%)=0.35 (N/A); (N2) Caudal impulsión (m3/h)=500 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste setpoint y válvula",
+    "observaciones": "El CTI integra variables críticas del caso (Temperatura Fuera De Rango) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:08:00.000Z",
@@ -101,7 +143,13 @@
     "tiempo": 57.92,
     "causa": "Caso validado de ejemplo asociado a Vacío Medicinal / Aspiración. Variables críticas observadas: (N2) Presión vacío=480 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Activación de bomba redundante",
-    "obs": "El CTI integra variables críticas del caso (Vacío Medicinal / Aspiración) y prioriza 'Activación de bomba redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Vacío Medicinal / Aspiración) y prioriza 'Activación de bomba redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Activación de bomba redundante",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 57.92,
+    "causa_raiz": "Caso validado de ejemplo asociado a Vacío Medicinal / Aspiración. Variables críticas observadas: (N2) Presión vacío=480 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Activación de bomba redundante",
+    "observaciones": "El CTI integra variables críticas del caso (Vacío Medicinal / Aspiración) y prioriza 'Activación de bomba redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:09:00.000Z",
@@ -114,7 +162,13 @@
     "tiempo": 59.37,
     "causa": "Caso validado de ejemplo asociado a Oscilación De Aire Medicinal. Variables críticas observadas: (N2) Presión aire medicinal (bar)=6.5 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Botella reserva=disponible y estable (Estable); (N2) Consumo eléctrico (kW)=1.8 (N/A)",
     "solucion": "Ajuste de regulador local",
-    "obs": "El CTI integra variables críticas del caso (Oscilación De Aire Medicinal) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Oscilación De Aire Medicinal) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Ajuste de regulador local",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 59.37,
+    "causa_raiz": "Caso validado de ejemplo asociado a Oscilación De Aire Medicinal. Variables críticas observadas: (N2) Presión aire medicinal (bar)=6.5 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Botella reserva=disponible y estable (Estable); (N2) Consumo eléctrico (kW)=1.8 (N/A)",
+    "solucion_real": "Ajuste de regulador local",
+    "observaciones": "El CTI integra variables críticas del caso (Oscilación De Aire Medicinal) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:10:00.000Z",
@@ -127,7 +181,13 @@
     "tiempo": 62.72,
     "causa": "Caso validado de ejemplo asociado a Alarma IMD / Aislamiento. Variables críticas observadas: (N2) Caudal impulsión (m3/h)=2100 (N/A); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=sí, estable (Estable); (N1) Estado aislamiento IT=fallo (N/A)",
     "solucion": "Búsqueda de defecto por ramas",
-    "obs": "El CTI integra variables críticas del caso (Alarma IMD / Aislamiento) y prioriza 'Búsqueda de defecto por ramas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Alarma IMD / Aislamiento) y prioriza 'Búsqueda de defecto por ramas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Búsqueda de defecto por ramas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 62.72,
+    "causa_raiz": "Caso validado de ejemplo asociado a Alarma IMD / Aislamiento. Variables críticas observadas: (N2) Caudal impulsión (m3/h)=2100 (N/A); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=sí, estable (Estable); (N1) Estado aislamiento IT=fallo (N/A)",
+    "solucion_real": "Búsqueda de defecto por ramas",
+    "observaciones": "El CTI integra variables críticas del caso (Alarma IMD / Aislamiento) y prioriza 'Búsqueda de defecto por ramas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:11:00.000Z",
@@ -140,7 +200,13 @@
     "tiempo": 54.02,
     "causa": "Caso validado de ejemplo asociado a Aumento De Temperatura. Variables críticas observadas: (N2) Temperatura de sala (°C)=26.2 (N/A); (N2) Temperatura impulsión (°C)=24.2 (N/A); (N2) Humedad relativa (%)=58 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Aumento De Temperatura) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Aumento De Temperatura) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.02,
+    "causa_raiz": "Caso validado de ejemplo asociado a Aumento De Temperatura. Variables críticas observadas: (N2) Temperatura de sala (°C)=26.2 (N/A); (N2) Temperatura impulsión (°C)=24.2 (N/A); (N2) Humedad relativa (%)=58 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Aumento De Temperatura) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:12:00.000Z",
@@ -153,7 +219,13 @@
     "tiempo": 53.47,
     "causa": "Caso validado de ejemplo asociado a Fallo De Suministro Eléctrico. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Fallo De Suministro Eléctrico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fallo De Suministro Eléctrico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 53.47,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo De Suministro Eléctrico. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo De Suministro Eléctrico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:13:00.000Z",
@@ -166,7 +238,13 @@
     "tiempo": 44.3,
     "causa": "Caso validado de ejemplo asociado a Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=3.8 (N/A); (N1) Botella reserva=activada (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación parcial a UTA redundante",
-    "obs": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación parcial a UTA redundante",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 44.3,
+    "causa_raiz": "Caso validado de ejemplo asociado a Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=3.8 (N/A); (N1) Botella reserva=activada (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación parcial a UTA redundante",
+    "observaciones": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:14:00.000Z",
@@ -179,7 +257,13 @@
     "tiempo": 60.55,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Monitorización. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Monitorización) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Monitorización) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 60.55,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Monitorización. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Monitorización) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:15:00.000Z",
@@ -192,7 +276,13 @@
     "tiempo": 32.37,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Presión Diferencial. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=2 (N/A); (N2) ΔP_filtro HEPA (Pa)=40 (Sube); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 32.37,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Presión Diferencial. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=2 (N/A); (N2) ΔP_filtro HEPA (Pa)=40 (Sube); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:16:00.000Z",
@@ -205,7 +295,13 @@
     "tiempo": 33.15,
     "causa": "Caso validado de ejemplo asociado a Rendimiento Degradado UTA. Variables críticas observadas: (N2) Temperatura impulsión (°C)=22.5 (N/A); (N2) Caudal impulsión (m3/h)=-25 (N/A); (N1) Modo UTA=automático (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Rendimiento Degradado UTA) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Rendimiento Degradado UTA) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 33.15,
+    "causa_raiz": "Caso validado de ejemplo asociado a Rendimiento Degradado UTA. Variables críticas observadas: (N2) Temperatura impulsión (°C)=22.5 (N/A); (N2) Caudal impulsión (m3/h)=-25 (N/A); (N1) Modo UTA=automático (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Rendimiento Degradado UTA) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:17:00.000Z",
@@ -218,7 +314,13 @@
     "tiempo": 62.8,
     "causa": "Caso validado de ejemplo asociado a UPS En Bypass. Variables críticas observadas: (N1) Estado UPS=bypass automático activado (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (UPS En Bypass) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (UPS En Bypass) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 62.8,
+    "causa_raiz": "Caso validado de ejemplo asociado a UPS En Bypass. Variables críticas observadas: (N1) Estado UPS=bypass automático activado (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (UPS En Bypass) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:18:00.000Z",
@@ -231,7 +333,13 @@
     "tiempo": 47.37,
     "causa": "Caso validado de ejemplo asociado a Vacío Quirúrgico. Variables críticas observadas: (N2) Presión vacío=-0.45 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Vacío Quirúrgico) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Vacío Quirúrgico) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 47.37,
+    "causa_raiz": "Caso validado de ejemplo asociado a Vacío Quirúrgico. Variables críticas observadas: (N2) Presión vacío=-0.45 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Vacío Quirúrgico) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:19:00.000Z",
@@ -244,7 +352,13 @@
     "tiempo": 65.93,
     "causa": "Caso validado de ejemplo asociado a Humedad Fuera De Rango. Variables críticas observadas: (N2) Temperatura de sala (°C)=23 (N/A); (N2) Humedad relativa (%)=68 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 65.93,
+    "causa_raiz": "Caso validado de ejemplo asociado a Humedad Fuera De Rango. Variables críticas observadas: (N2) Temperatura de sala (°C)=23 (N/A); (N2) Humedad relativa (%)=68 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:20:00.000Z",
@@ -257,7 +371,13 @@
     "tiempo": 43.88,
     "causa": "Caso validado de ejemplo asociado a Saturación De Red De Comunicaciones. Variables críticas observadas: (N1) Alarma central=activa de forma intermitente (Oscila); (N2) Latencia de red (ms)=450 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Segmentación temporal de tráfico crítico",
-    "obs": "El CTI integra variables críticas del caso (Saturación De Red De Comunicaciones) y prioriza 'Segmentación temporal de tráfico crítico' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Saturación De Red De Comunicaciones) y prioriza 'Segmentación temporal de tráfico crítico' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Segmentación temporal de tráfico crítico",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 43.88,
+    "causa_raiz": "Caso validado de ejemplo asociado a Saturación De Red De Comunicaciones. Variables críticas observadas: (N1) Alarma central=activa de forma intermitente (Oscila); (N2) Latencia de red (ms)=450 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Segmentación temporal de tráfico crítico",
+    "observaciones": "El CTI integra variables críticas del caso (Saturación De Red De Comunicaciones) y prioriza 'Segmentación temporal de tráfico crítico' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:21:00.000Z",
@@ -270,7 +390,13 @@
     "tiempo": 55.6,
     "causa": "Caso validado de ejemplo asociado a Humedad Fuera De Rango. Variables críticas observadas: (N2) Temperatura impulsión (°C)=22 (N/A); (N2) Humedad relativa (%)=67 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 55.6,
+    "causa_raiz": "Caso validado de ejemplo asociado a Humedad Fuera De Rango. Variables críticas observadas: (N2) Temperatura impulsión (°C)=22 (N/A); (N2) Humedad relativa (%)=67 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:22:00.000Z",
@@ -283,7 +409,13 @@
     "tiempo": 43.23,
     "causa": "Caso validado de ejemplo asociado a UPS En Estado Degradado. Variables críticas observadas: (N1) Estado UPS=en alarma (Oscila); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=sí, estable (Estable); (N2) Consumo eléctrico (kW)=18 (N/A)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (UPS En Estado Degradado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (UPS En Estado Degradado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 43.23,
+    "causa_raiz": "Caso validado de ejemplo asociado a UPS En Estado Degradado. Variables críticas observadas: (N1) Estado UPS=en alarma (Oscila); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=sí, estable (Estable); (N2) Consumo eléctrico (kW)=18 (N/A)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (UPS En Estado Degradado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:23:00.000Z",
@@ -296,7 +428,13 @@
     "tiempo": 75.78,
     "causa": "Caso validado de ejemplo asociado a Inconsistencia De Lectura Ambiental. Variables críticas observadas: (N2) Temperatura de sala (°C)=23 (N/A); (N1) Estado gateway/servidor=activo y estable (Estable); (N1) Sonda redundante=disponible y estable (Estable); (N1) Alarma central=activa de forma intermitente (Oscila)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Inconsistencia De Lectura Ambiental) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Inconsistencia De Lectura Ambiental) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 75.78,
+    "causa_raiz": "Caso validado de ejemplo asociado a Inconsistencia De Lectura Ambiental. Variables críticas observadas: (N2) Temperatura de sala (°C)=23 (N/A); (N1) Estado gateway/servidor=activo y estable (Estable); (N1) Sonda redundante=disponible y estable (Estable); (N1) Alarma central=activa de forma intermitente (Oscila)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Inconsistencia De Lectura Ambiental) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:24:00.000Z",
@@ -309,7 +447,13 @@
     "tiempo": 40.58,
     "causa": "Caso validado de ejemplo asociado a Reserva Activa Por Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=3.6 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Botella reserva=activa y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Reserva Activa Por Caída De Presión O₂) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Reserva Activa Por Caída De Presión O₂) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 40.58,
+    "causa_raiz": "Caso validado de ejemplo asociado a Reserva Activa Por Caída De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=3.6 (N/A); (N1) Alarma central=activa y estable (Estable); (N1) Botella reserva=activa y estable (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Reserva Activa Por Caída De Presión O₂) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:25:00.000Z",
@@ -322,7 +466,13 @@
     "tiempo": 40.47,
     "causa": "Caso validado de ejemplo asociado a Saturación De Filtro Hepa. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=4 (N/A); (N2) ΔP_filtro HEPA (Pa)=42 (N/A); (N2) Caudal impulsión (m3/h)=1800 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Saturación De Filtro Hepa) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Saturación De Filtro Hepa) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 40.47,
+    "causa_raiz": "Caso validado de ejemplo asociado a Saturación De Filtro Hepa. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=4 (N/A); (N2) ΔP_filtro HEPA (Pa)=42 (N/A); (N2) Caudal impulsión (m3/h)=1800 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Saturación De Filtro Hepa) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:26:00.000Z",
@@ -335,7 +485,13 @@
     "tiempo": 56.08,
     "causa": "Caso validado de ejemplo asociado a Prealarma De Aislamiento It. Variables críticas observadas: (N1) Estado UPS=activo y estable (Estable); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado aislamiento IT=alarma con comportamiento oscilante (Oscila)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Prealarma De Aislamiento It) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Prealarma De Aislamiento It) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 56.08,
+    "causa_raiz": "Caso validado de ejemplo asociado a Prealarma De Aislamiento It. Variables críticas observadas: (N1) Estado UPS=activo y estable (Estable); (N1) Estado ATS=activo y estable (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado aislamiento IT=alarma con comportamiento oscilante (Oscila)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Prealarma De Aislamiento It) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:27:00.000Z",
@@ -348,7 +504,13 @@
     "tiempo": 52.72,
     "causa": "Caso validado de ejemplo asociado a Vacío Inestable En Alta Demanda. Variables críticas observadas: (N2) Presión vacío=-420 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Vacío Inestable En Alta Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Vacío Inestable En Alta Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 52.72,
+    "causa_raiz": "Caso validado de ejemplo asociado a Vacío Inestable En Alta Demanda. Variables críticas observadas: (N2) Presión vacío=-420 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Vacío Inestable En Alta Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:28:00.000Z",
@@ -361,7 +523,13 @@
     "tiempo": 47.28,
     "causa": "Caso validado de ejemplo asociado a Pérdida Parcial De Supervisión. Variables críticas observadas: (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Pérdida Parcial De Supervisión) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Pérdida Parcial De Supervisión) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 47.28,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida Parcial De Supervisión. Variables críticas observadas: (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida Parcial De Supervisión) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:29:00.000Z",
@@ -374,7 +542,13 @@
     "tiempo": 39.33,
     "causa": "Caso validado de ejemplo asociado a Retorno Térmico Elevado. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.8 (N/A); (N2) Caudal retorno (m3/h)=900 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Retorno Térmico Elevado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Retorno Térmico Elevado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 39.33,
+    "causa_raiz": "Caso validado de ejemplo asociado a Retorno Térmico Elevado. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.8 (N/A); (N2) Caudal retorno (m3/h)=900 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Retorno Térmico Elevado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:30:00.000Z",
@@ -387,7 +561,13 @@
     "tiempo": 68.72,
     "causa": "Caso validado de ejemplo asociado a Calidad De Aire / VOC Fuera De Rango. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=6 (N/A); (N2) Caudal impulsión (m3/h)=1900 (N/A); (N1) Alarma central=activa y estable (Estable); (N2) VOC (ppb)=650 (N/A)",
     "solucion": "Ajuste de regulador local",
-    "obs": "El CTI integra variables críticas del caso (Calidad De Aire / VOC Fuera De Rango) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Calidad De Aire / VOC Fuera De Rango) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Ajuste de regulador local",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 68.72,
+    "causa_raiz": "Caso validado de ejemplo asociado a Calidad De Aire / VOC Fuera De Rango. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=6 (N/A); (N2) Caudal impulsión (m3/h)=1900 (N/A); (N1) Alarma central=activa y estable (Estable); (N2) VOC (ppb)=650 (N/A)",
+    "solucion_real": "Ajuste de regulador local",
+    "observaciones": "El CTI integra variables críticas del caso (Calidad De Aire / VOC Fuera De Rango) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:31:00.000Z",
@@ -400,7 +580,13 @@
     "tiempo": 57.77,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Presión Diferencial Progresiva. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=3 (N/A); (N2) ΔP_filtro HEPA (Pa)=38 (N/A); (N2) Caudal impulsión (m3/h)=1750 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial Progresiva) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial Progresiva) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 57.77,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Presión Diferencial Progresiva. Variables críticas observadas: (N2) Presión diferencial sala-pasillo (Pa)=3 (N/A); (N2) ΔP_filtro HEPA (Pa)=38 (N/A); (N2) Caudal impulsión (m3/h)=1750 (N/A); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial Progresiva) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:32:00.000Z",
@@ -413,7 +599,13 @@
     "tiempo": 54.1,
     "causa": "Caso validado de ejemplo asociado a Disparo Intermitente De UPS. Variables críticas observadas: (N1) Estado UPS=en alarma (Oscila); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Bypass controlado a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Disparo Intermitente De UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Disparo Intermitente De UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Bypass controlado a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.1,
+    "causa_raiz": "Caso validado de ejemplo asociado a Disparo Intermitente De UPS. Variables críticas observadas: (N1) Estado UPS=en alarma (Oscila); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Bypass controlado a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Disparo Intermitente De UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:33:00.000Z",
@@ -426,7 +618,13 @@
     "tiempo": 65.92,
     "causa": "Caso validado de ejemplo asociado a Latencia Elevada En Comunicaciones. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Latencia Elevada En Comunicaciones) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Latencia Elevada En Comunicaciones) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 65.92,
+    "causa_raiz": "Caso validado de ejemplo asociado a Latencia Elevada En Comunicaciones. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Latencia Elevada En Comunicaciones) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:34:00.000Z",
@@ -439,7 +637,13 @@
     "tiempo": 54.0,
     "causa": "Caso validado de ejemplo asociado a Consumo Elevado De O₂. Variables críticas observadas: (N2) Presión O2 (bar)=4.2 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Consumo Elevado De O₂) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Consumo Elevado De O₂) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.0,
+    "causa_raiz": "Caso validado de ejemplo asociado a Consumo Elevado De O₂. Variables críticas observadas: (N2) Presión O2 (bar)=4.2 (N/A); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Consumo Elevado De O₂) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:35:00.000Z",
@@ -452,7 +656,13 @@
     "tiempo": 42.85,
     "causa": "Caso validado de ejemplo asociado a Fallo En Registro Histórico De Datos. Variables críticas observadas: (N1) Alarma central=inactiva (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Fallo En Registro Histórico De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Fallo En Registro Histórico De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 42.85,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo En Registro Histórico De Datos. Variables críticas observadas: (N1) Alarma central=inactiva (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo En Registro Histórico De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:36:00.000Z",
@@ -465,7 +675,13 @@
     "tiempo": 55.83,
     "causa": "Caso validado de ejemplo asociado a Desequilibrio De Cargas. Variables críticas observadas: (N2) ΔP_filtro HEPA (Pa)=25 (Sube); (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Desequilibrio De Cargas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desequilibrio De Cargas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 55.83,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desequilibrio De Cargas. Variables críticas observadas: (N2) ΔP_filtro HEPA (Pa)=25 (Sube); (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Desequilibrio De Cargas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:37:00.000Z",
@@ -478,7 +694,13 @@
     "tiempo": 37.22,
     "causa": "Caso validado de ejemplo asociado a Fuga Potencial En Circuito. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Fuga Potencial En Circuito) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fuga Potencial En Circuito) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 37.22,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fuga Potencial En Circuito. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Fuga Potencial En Circuito) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:38:00.000Z",
@@ -491,7 +713,13 @@
     "tiempo": 38.52,
     "causa": "Caso validado de ejemplo asociado a Fallo Parcial De Servidor. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Modo UTA=activo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Fallo Parcial De Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fallo Parcial De Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 38.52,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo Parcial De Servidor. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Modo UTA=activo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo Parcial De Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:39:00.000Z",
@@ -504,7 +732,13 @@
     "tiempo": 46.1,
     "causa": "Caso validado de ejemplo asociado a Caudal De Impulsión Reducido. Variables críticas observadas: (N2) Temperatura de sala (°C)=23.5 (N/A); (N2) Caudal impulsión (m3/h)=-20 (N/A); (N1) Modo UTA=activo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Caudal De Impulsión Reducido) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Caudal De Impulsión Reducido) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 46.1,
+    "causa_raiz": "Caso validado de ejemplo asociado a Caudal De Impulsión Reducido. Variables críticas observadas: (N2) Temperatura de sala (°C)=23.5 (N/A); (N2) Caudal impulsión (m3/h)=-20 (N/A); (N1) Modo UTA=activo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Caudal De Impulsión Reducido) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:40:00.000Z",
@@ -517,7 +751,13 @@
     "tiempo": 47.02,
     "causa": "Caso validado de ejemplo asociado a Desincronización Horaria. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Desincronización Horaria) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desincronización Horaria) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 47.02,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desincronización Horaria. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Desincronización Horaria) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:41:00.000Z",
@@ -530,7 +770,13 @@
     "tiempo": 37.28,
     "causa": "Caso validado de ejemplo asociado a Aumento De Temperatura Con Bajo Caudal. Variables críticas observadas: (N2) Temperatura de sala (°C)=25.8 (N/A); (N2) Temperatura impulsión (°C)=23.5 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste setpoint y válvula",
-    "obs": "El CTI integra variables críticas del caso (Aumento De Temperatura Con Bajo Caudal) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Aumento De Temperatura Con Bajo Caudal) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste setpoint y válvula",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 37.28,
+    "causa_raiz": "Caso validado de ejemplo asociado a Aumento De Temperatura Con Bajo Caudal. Variables críticas observadas: (N2) Temperatura de sala (°C)=25.8 (N/A); (N2) Temperatura impulsión (°C)=23.5 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste setpoint y válvula",
+    "observaciones": "El CTI integra variables críticas del caso (Aumento De Temperatura Con Bajo Caudal) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:42:00.000Z",
@@ -543,7 +789,13 @@
     "tiempo": 42.55,
     "causa": "Caso validado de ejemplo asociado a Falla Parcial En Línea De Emergencia. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible pero con comportamiento inestable (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Falla Parcial En Línea De Emergencia) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Falla Parcial En Línea De Emergencia) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 42.55,
+    "causa_raiz": "Caso validado de ejemplo asociado a Falla Parcial En Línea De Emergencia. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible pero con comportamiento inestable (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Falla Parcial En Línea De Emergencia) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:43:00.000Z",
@@ -556,7 +808,13 @@
     "tiempo": 50.38,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Sincronización De Datos. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Sincronización De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Sincronización De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 50.38,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Sincronización De Datos. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Sincronización De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:44:00.000Z",
@@ -569,7 +827,13 @@
     "tiempo": 37.07,
     "causa": "Caso validado de ejemplo asociado a Descenso Lento De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=4 (N/A); (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación parcial a UTA redundante",
-    "obs": "El CTI integra variables críticas del caso (Descenso Lento De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Descenso Lento De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación parcial a UTA redundante",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 37.07,
+    "causa_raiz": "Caso validado de ejemplo asociado a Descenso Lento De Presión O₂. Variables críticas observadas: (N2) Presión O2 (bar)=4 (N/A); (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación parcial a UTA redundante",
+    "observaciones": "El CTI integra variables críticas del caso (Descenso Lento De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:45:00.000Z",
@@ -582,7 +846,13 @@
     "tiempo": 46.92,
     "causa": "Caso validado de ejemplo asociado a Incremento De Δp En Filtro Sin Impacto Inmediato. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Incremento De Δp En Filtro Sin Impacto Inmediato) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Incremento De Δp En Filtro Sin Impacto Inmediato) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 46.92,
+    "causa_raiz": "Caso validado de ejemplo asociado a Incremento De Δp En Filtro Sin Impacto Inmediato. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Incremento De Δp En Filtro Sin Impacto Inmediato) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:46:00.000Z",
@@ -595,7 +865,13 @@
     "tiempo": 46.48,
     "causa": "Caso validado de ejemplo asociado a Sobrecarga Puntual Del Sistema. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Sobrecarga Puntual Del Sistema) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Sobrecarga Puntual Del Sistema) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 46.48,
+    "causa_raiz": "Caso validado de ejemplo asociado a Sobrecarga Puntual Del Sistema. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Sobrecarga Puntual Del Sistema) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:47:00.000Z",
@@ -608,7 +884,13 @@
     "tiempo": 55.4,
     "causa": "Caso validado de ejemplo asociado a Oscilación De Vacío Medicinal. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Oscilación De Vacío Medicinal) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Oscilación De Vacío Medicinal) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 55.4,
+    "causa_raiz": "Caso validado de ejemplo asociado a Oscilación De Vacío Medicinal. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Oscilación De Vacío Medicinal) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:48:00.000Z",
@@ -621,7 +903,13 @@
     "tiempo": 60.48,
     "causa": "Caso validado de ejemplo asociado a Recuperación Parcial De Comunicación. Variables críticas observadas: (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Recuperación Parcial De Comunicación) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Recuperación Parcial De Comunicación) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 60.48,
+    "causa_raiz": "Caso validado de ejemplo asociado a Recuperación Parcial De Comunicación. Variables críticas observadas: (N1) Sonda redundante=no disponible (Estable); (N1) Alarma central=activa de forma intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Recuperación Parcial De Comunicación) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:49:00.000Z",
@@ -634,7 +922,13 @@
     "tiempo": 59.48,
     "causa": "Caso validado de ejemplo asociado a Humedad Baja En Sala. Variables críticas observadas: (N2) Temperatura de sala (°C)=22.5 (N/A); (N2) Humedad relativa (%)=32 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Humedad Baja En Sala) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Humedad Baja En Sala) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 59.48,
+    "causa_raiz": "Caso validado de ejemplo asociado a Humedad Baja En Sala. Variables críticas observadas: (N2) Temperatura de sala (°C)=22.5 (N/A); (N2) Humedad relativa (%)=32 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Humedad Baja En Sala) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:50:00.000Z",
@@ -647,7 +941,13 @@
     "tiempo": 52.62,
     "causa": "Caso validado de ejemplo asociado a Fallo En Polling De Sensores. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Fallo En Polling De Sensores) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Fallo En Polling De Sensores) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 52.62,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo En Polling De Sensores. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo En Polling De Sensores) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:51:00.000Z",
@@ -660,7 +960,13 @@
     "tiempo": 56.17,
     "causa": "Caso validado de ejemplo asociado a Inestabilidad En Control De Temperatura. Variables críticas observadas: (N2) Temperatura de sala (°C)=23.8 (N/A); (N2) Temperatura impulsión (°C)=22 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Inestabilidad En Control De Temperatura) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Inestabilidad En Control De Temperatura) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 56.17,
+    "causa_raiz": "Caso validado de ejemplo asociado a Inestabilidad En Control De Temperatura. Variables críticas observadas: (N2) Temperatura de sala (°C)=23.8 (N/A); (N2) Temperatura impulsión (°C)=22 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Inestabilidad En Control De Temperatura) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:52:00.000Z",
@@ -673,7 +979,13 @@
     "tiempo": 51.15,
     "causa": "Caso validado de ejemplo asociado a Recuperación Inestable Tras Conmutación. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo tras conmutación (Estable); (N1) Línea emergencia=operativa con pequeñas fluctuaciones (Oscila); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Recuperación Inestable Tras Conmutación) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Recuperación Inestable Tras Conmutación) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 51.15,
+    "causa_raiz": "Caso validado de ejemplo asociado a Recuperación Inestable Tras Conmutación. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo tras conmutación (Estable); (N1) Línea emergencia=operativa con pequeñas fluctuaciones (Oscila); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Recuperación Inestable Tras Conmutación) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:53:00.000Z",
@@ -686,7 +998,13 @@
     "tiempo": 34.57,
     "causa": "Caso validado de ejemplo asociado a Retardo En Actualización De Variables. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Retardo En Actualización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Retardo En Actualización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 34.57,
+    "causa_raiz": "Caso validado de ejemplo asociado a Retardo En Actualización De Variables. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Retardo En Actualización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:54:00.000Z",
@@ -699,7 +1017,13 @@
     "tiempo": 53.4,
     "causa": "Caso validado de ejemplo asociado a Activación Frecuente De Reserva. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=activaciones repetidas (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Activación Frecuente De Reserva) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Activación Frecuente De Reserva) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 53.4,
+    "causa_raiz": "Caso validado de ejemplo asociado a Activación Frecuente De Reserva. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=activaciones repetidas (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Activación Frecuente De Reserva) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:55:00.000Z",
@@ -712,7 +1036,13 @@
     "tiempo": 45.47,
     "causa": "Caso validado de ejemplo asociado a Cola De Eventos Saturada. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Cola De Eventos Saturada) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Cola De Eventos Saturada) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 45.47,
+    "causa_raiz": "Caso validado de ejemplo asociado a Cola De Eventos Saturada. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Cola De Eventos Saturada) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:56:00.000Z",
@@ -725,7 +1055,13 @@
     "tiempo": 56.47,
     "causa": "Caso validado de ejemplo asociado a Oscilación De Tensión En Línea Principal. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Oscilación De Tensión En Línea Principal) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Oscilación De Tensión En Línea Principal) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 56.47,
+    "causa_raiz": "Caso validado de ejemplo asociado a Oscilación De Tensión En Línea Principal. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Oscilación De Tensión En Línea Principal) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:57:00.000Z",
@@ -738,7 +1074,13 @@
     "tiempo": 58.32,
     "causa": "Caso validado de ejemplo asociado a Disminución De Vacío En Demanda Variable. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Disminución De Vacío En Demanda Variable) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Disminución De Vacío En Demanda Variable) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 58.32,
+    "causa_raiz": "Caso validado de ejemplo asociado a Disminución De Vacío En Demanda Variable. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Disminución De Vacío En Demanda Variable) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:58:00.000Z",
@@ -751,7 +1093,13 @@
     "tiempo": 46.02,
     "causa": "Caso validado de ejemplo asociado a Pérdida Temporal De Histórico. Variables críticas observadas: (N1) Alarma central=inactiva (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Pérdida Temporal De Histórico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
+    "obs": "El CTI integra variables críticas del caso (Pérdida Temporal De Histórico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 46.02,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida Temporal De Histórico. Variables críticas observadas: (N1) Alarma central=inactiva (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida Temporal De Histórico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja."
   },
   {
     "fecha": "2026-04-30T12:59:00.000Z",
@@ -764,7 +1112,13 @@
     "tiempo": 65.33,
     "causa": "Caso validado de ejemplo asociado a Desviación De Humedad Con Temperatura Estable. Variables críticas observadas: (N2) Humedad relativa (%)=65 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste setpoint y válvula",
-    "obs": "El CTI integra variables críticas del caso (Desviación De Humedad Con Temperatura Estable) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desviación De Humedad Con Temperatura Estable) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste setpoint y válvula",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 65.33,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desviación De Humedad Con Temperatura Estable. Variables críticas observadas: (N2) Humedad relativa (%)=65 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste setpoint y válvula",
+    "observaciones": "El CTI integra variables críticas del caso (Desviación De Humedad Con Temperatura Estable) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:00:00.000Z",
@@ -777,7 +1131,13 @@
     "tiempo": 45.17,
     "causa": "Caso validado de ejemplo asociado a Error En Escritura De Variables. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Error En Escritura De Variables) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Error En Escritura De Variables) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 45.17,
+    "causa_raiz": "Caso validado de ejemplo asociado a Error En Escritura De Variables. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Error En Escritura De Variables) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:01:00.000Z",
@@ -790,7 +1150,13 @@
     "tiempo": 38.27,
     "causa": "Caso validado de ejemplo asociado a Respuesta Lenta Del Sistema Térmico. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.5 (N/A); (N2) Temperatura impulsión (°C)=22 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema Térmico) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema Térmico) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 38.27,
+    "causa_raiz": "Caso validado de ejemplo asociado a Respuesta Lenta Del Sistema Térmico. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.5 (N/A); (N2) Temperatura impulsión (°C)=22 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema Térmico) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:02:00.000Z",
@@ -803,7 +1169,13 @@
     "tiempo": 45.3,
     "causa": "Caso validado de ejemplo asociado a Retardo En Conmutación ATS. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo con retardo de respuesta (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Retardo En Conmutación ATS) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Retardo En Conmutación ATS) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 45.3,
+    "causa_raiz": "Caso validado de ejemplo asociado a Retardo En Conmutación ATS. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo con retardo de respuesta (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Retardo En Conmutación ATS) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:03:00.000Z",
@@ -816,7 +1188,13 @@
     "tiempo": 63.3,
     "causa": "Caso validado de ejemplo asociado a Inconsistencia En Alarmas. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=comportamiento incoherente (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Inconsistencia En Alarmas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Inconsistencia En Alarmas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 63.3,
+    "causa_raiz": "Caso validado de ejemplo asociado a Inconsistencia En Alarmas. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=comportamiento incoherente (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Inconsistencia En Alarmas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:04:00.000Z",
@@ -829,7 +1207,13 @@
     "tiempo": 36.42,
     "causa": "Caso validado de ejemplo asociado a Variación De Presión En Demanda. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Variación De Presión En Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Variación De Presión En Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 36.42,
+    "causa_raiz": "Caso validado de ejemplo asociado a Variación De Presión En Demanda. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Variación De Presión En Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:05:00.000Z",
@@ -842,7 +1226,13 @@
     "tiempo": 42.35,
     "causa": "Caso validado de ejemplo asociado a Desajuste Entre Impulsión Y Retorno. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Desajuste Entre Impulsión Y Retorno) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desajuste Entre Impulsión Y Retorno) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 42.35,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desajuste Entre Impulsión Y Retorno. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Desajuste Entre Impulsión Y Retorno) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:06:00.000Z",
@@ -855,7 +1245,13 @@
     "tiempo": 60.73,
     "causa": "Caso validado de ejemplo asociado a Falla Temporal Del UPS. Variables críticas observadas: (N1) Estado UPS=recuperación tras fallo (N/A); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Bypass controlado a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Falla Temporal Del UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Falla Temporal Del UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Bypass controlado a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 60.73,
+    "causa_raiz": "Caso validado de ejemplo asociado a Falla Temporal Del UPS. Variables críticas observadas: (N1) Estado UPS=recuperación tras fallo (N/A); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Bypass controlado a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Falla Temporal Del UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:07:00.000Z",
@@ -868,7 +1264,13 @@
     "tiempo": 49.57,
     "causa": "Caso validado de ejemplo asociado a Respuesta Lenta Del Sistema De Vacío. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema De Vacío) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema De Vacío) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 49.57,
+    "causa_raiz": "Caso validado de ejemplo asociado a Respuesta Lenta Del Sistema De Vacío. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema De Vacío) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:08:00.000Z",
@@ -881,7 +1283,13 @@
     "tiempo": 60.13,
     "causa": "Caso validado de ejemplo asociado a Reinicio Espontáneo De Sistema. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Reinicio Espontáneo De Sistema) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Reinicio Espontáneo De Sistema) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 60.13,
+    "causa_raiz": "Caso validado de ejemplo asociado a Reinicio Espontáneo De Sistema. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Reinicio Espontáneo De Sistema) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:09:00.000Z",
@@ -894,7 +1302,13 @@
     "tiempo": 59.12,
     "causa": "Caso validado de ejemplo asociado a Oscilación De Humedad Y Temperatura. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Oscilación De Humedad Y Temperatura) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Oscilación De Humedad Y Temperatura) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 59.12,
+    "causa_raiz": "Caso validado de ejemplo asociado a Oscilación De Humedad Y Temperatura. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Oscilación De Humedad Y Temperatura) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:10:00.000Z",
@@ -907,7 +1321,13 @@
     "tiempo": 54.18,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Sincronización Con Dispositivos. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Sincronización Con Dispositivos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Sincronización Con Dispositivos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.18,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Sincronización Con Dispositivos. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Sincronización Con Dispositivos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:11:00.000Z",
@@ -920,7 +1340,13 @@
     "tiempo": 44.42,
     "causa": "Caso validado de ejemplo asociado a Desviación Térmica En Condiciones Estables. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.7 (N/A); (N2) Temperatura impulsión (°C)=22.5 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Desviación Térmica En Condiciones Estables) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desviación Térmica En Condiciones Estables) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 44.42,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desviación Térmica En Condiciones Estables. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.7 (N/A); (N2) Temperatura impulsión (°C)=22.5 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Desviación Térmica En Condiciones Estables) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:12:00.000Z",
@@ -933,7 +1359,13 @@
     "tiempo": 64.33,
     "causa": "Caso validado de ejemplo asociado a Anomalía En Distribución De Carga. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Anomalía En Distribución De Carga) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Anomalía En Distribución De Carga) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 64.33,
+    "causa_raiz": "Caso validado de ejemplo asociado a Anomalía En Distribución De Carga. Variables críticas observadas: (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Anomalía En Distribución De Carga) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:13:00.000Z",
@@ -946,7 +1378,13 @@
     "tiempo": 44.75,
     "causa": "Caso validado de ejemplo asociado a Degradación Progresiva De Comunicaciones. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Degradación Progresiva De Comunicaciones) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Degradación Progresiva De Comunicaciones) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 44.75,
+    "causa_raiz": "Caso validado de ejemplo asociado a Degradación Progresiva De Comunicaciones. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Degradación Progresiva De Comunicaciones) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:14:00.000Z",
@@ -959,7 +1397,13 @@
     "tiempo": 60.02,
     "causa": "Caso validado de ejemplo asociado a Variación De Suministro En Pico De Demanda. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Variación De Suministro En Pico De Demanda) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Variación De Suministro En Pico De Demanda) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 60.02,
+    "causa_raiz": "Caso validado de ejemplo asociado a Variación De Suministro En Pico De Demanda. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Variación De Suministro En Pico De Demanda) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:15:00.000Z",
@@ -972,7 +1416,13 @@
     "tiempo": 56.13,
     "causa": "Caso validado de ejemplo asociado a Inestabilidad En Caudal De Impulsión. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Inestabilidad En Caudal De Impulsión) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Inestabilidad En Caudal De Impulsión) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 56.13,
+    "causa_raiz": "Caso validado de ejemplo asociado a Inestabilidad En Caudal De Impulsión. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Inestabilidad En Caudal De Impulsión) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:16:00.000Z",
@@ -985,7 +1435,13 @@
     "tiempo": 62.18,
     "causa": "Caso validado de ejemplo asociado a Recuperación Parcial De Sistema UPS. Variables críticas observadas: (N1) Estado UPS=operativo con limitaciones (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Recuperación Parcial De Sistema UPS) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Recuperación Parcial De Sistema UPS) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 62.18,
+    "causa_raiz": "Caso validado de ejemplo asociado a Recuperación Parcial De Sistema UPS. Variables críticas observadas: (N1) Estado UPS=operativo con limitaciones (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Recuperación Parcial De Sistema UPS) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:17:00.000Z",
@@ -998,7 +1454,13 @@
     "tiempo": 42.53,
     "causa": "Caso validado de ejemplo asociado a Descenso Lento De Vacío. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Descenso Lento De Vacío) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Descenso Lento De Vacío) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 42.53,
+    "causa_raiz": "Caso validado de ejemplo asociado a Descenso Lento De Vacío. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Descenso Lento De Vacío) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:18:00.000Z",
@@ -1011,7 +1473,13 @@
     "tiempo": 54.33,
     "causa": "Caso validado de ejemplo asociado a Fallo Intermitente De Servidor. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Fallo Intermitente De Servidor) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fallo Intermitente De Servidor) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.33,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo Intermitente De Servidor. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo Intermitente De Servidor) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:19:00.000Z",
@@ -1024,7 +1492,13 @@
     "tiempo": 58.15,
     "causa": "Caso validado de ejemplo asociado a Variación De Humedad En Rango Límite. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Variación De Humedad En Rango Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Variación De Humedad En Rango Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 58.15,
+    "causa_raiz": "Caso validado de ejemplo asociado a Variación De Humedad En Rango Límite. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Variación De Humedad En Rango Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:20:00.000Z",
@@ -1037,7 +1511,13 @@
     "tiempo": 54.8,
     "causa": "Caso validado de ejemplo asociado a Fallo En Servicio De Alarmas. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Fallo En Servicio De Alarmas) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fallo En Servicio De Alarmas) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.8,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fallo En Servicio De Alarmas. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Fallo En Servicio De Alarmas) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:21:00.000Z",
@@ -1050,7 +1530,13 @@
     "tiempo": 58.05,
     "causa": "Caso validado de ejemplo asociado a Intermitencia En Base De Datos. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Intermitencia En Base De Datos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Intermitencia En Base De Datos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 58.05,
+    "causa_raiz": "Caso validado de ejemplo asociado a Intermitencia En Base De Datos. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Intermitencia En Base De Datos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:22:00.000Z",
@@ -1063,7 +1549,13 @@
     "tiempo": 34.92,
     "causa": "Caso validado de ejemplo asociado a Desequilibrio Entre Líneas De Suministro. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Desequilibrio Entre Líneas De Suministro) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desequilibrio Entre Líneas De Suministro) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 34.92,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desequilibrio Entre Líneas De Suministro. Variables críticas observadas: (N1) Estado UPS=operativo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Desequilibrio Entre Líneas De Suministro) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:23:00.000Z",
@@ -1076,7 +1568,13 @@
     "tiempo": 65.28,
     "causa": "Caso validado de ejemplo asociado a Latencia Variable En Monitorización. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Latencia Variable En Monitorización) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Latencia Variable En Monitorización) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 65.28,
+    "causa_raiz": "Caso validado de ejemplo asociado a Latencia Variable En Monitorización. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Latencia Variable En Monitorización) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:24:00.000Z",
@@ -1089,7 +1587,13 @@
     "tiempo": 61.67,
     "causa": "Caso validado de ejemplo asociado a Respuesta Irregular Del Suministro O₂. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Mantener línea de emergencia y verificar grupo",
-    "obs": "El CTI integra variables críticas del caso (Respuesta Irregular Del Suministro O₂) y prioriza 'Mantener línea de emergencia y verificar grupo' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Respuesta Irregular Del Suministro O₂) y prioriza 'Mantener línea de emergencia y verificar grupo' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Mantener línea de emergencia y verificar grupo",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 61.67,
+    "causa_raiz": "Caso validado de ejemplo asociado a Respuesta Irregular Del Suministro O₂. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Mantener línea de emergencia y verificar grupo",
+    "observaciones": "El CTI integra variables críticas del caso (Respuesta Irregular Del Suministro O₂) y prioriza 'Mantener línea de emergencia y verificar grupo' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:25:00.000Z",
@@ -1102,7 +1606,13 @@
     "tiempo": 36.82,
     "causa": "Caso validado de ejemplo asociado a Variación De Presión Diferencial Sin Causa Clara. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación parcial a UTA redundante",
-    "obs": "El CTI integra variables críticas del caso (Variación De Presión Diferencial Sin Causa Clara) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Variación De Presión Diferencial Sin Causa Clara) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Conmutación parcial a UTA redundante",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 36.82,
+    "causa_raiz": "Caso validado de ejemplo asociado a Variación De Presión Diferencial Sin Causa Clara. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación parcial a UTA redundante",
+    "observaciones": "El CTI integra variables críticas del caso (Variación De Presión Diferencial Sin Causa Clara) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:26:00.000Z",
@@ -1115,7 +1625,13 @@
     "tiempo": 47.58,
     "causa": "Caso validado de ejemplo asociado a Recuperación Incompleta Tras Evento. Variables críticas observadas: (N1) Estado UPS=operativo con limitaciones (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Recuperación Incompleta Tras Evento) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Recuperación Incompleta Tras Evento) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 47.58,
+    "causa_raiz": "Caso validado de ejemplo asociado a Recuperación Incompleta Tras Evento. Variables críticas observadas: (N1) Estado UPS=operativo con limitaciones (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Recuperación Incompleta Tras Evento) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:27:00.000Z",
@@ -1128,7 +1644,13 @@
     "tiempo": 52.65,
     "causa": "Caso validado de ejemplo asociado a Fluctuación De Vacío En Operación Continua. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Fluctuación De Vacío En Operación Continua) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Fluctuación De Vacío En Operación Continua) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 52.65,
+    "causa_raiz": "Caso validado de ejemplo asociado a Fluctuación De Vacío En Operación Continua. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Fluctuación De Vacío En Operación Continua) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:28:00.000Z",
@@ -1141,7 +1663,13 @@
     "tiempo": 39.83,
     "causa": "Caso validado de ejemplo asociado a Desincronización De Variables. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Desincronización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desincronización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 39.83,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desincronización De Variables. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Desincronización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:29:00.000Z",
@@ -1154,7 +1682,13 @@
     "tiempo": 48.58,
     "causa": "Caso validado de ejemplo asociado a Respuesta Irregular Del Control Higrométrico. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Respuesta Irregular Del Control Higrométrico) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Respuesta Irregular Del Control Higrométrico) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 48.58,
+    "causa_raiz": "Caso validado de ejemplo asociado a Respuesta Irregular Del Control Higrométrico. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Respuesta Irregular Del Control Higrométrico) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:30:00.000Z",
@@ -1167,7 +1701,13 @@
     "tiempo": 57.27,
     "causa": "Caso validado de ejemplo asociado a Operación En Condiciones Límite. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Operación En Condiciones Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Operación En Condiciones Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 57.27,
+    "causa_raiz": "Caso validado de ejemplo asociado a Operación En Condiciones Límite. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Operación En Condiciones Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:31:00.000Z",
@@ -1180,7 +1720,13 @@
     "tiempo": 56.58,
     "causa": "Caso validado de ejemplo asociado a Saturación Progresiva Del Sistema De Frío. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.6 (N/A); (N2) Temperatura impulsión (°C)=23 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Saturación Progresiva Del Sistema De Frío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Saturación Progresiva Del Sistema De Frío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 56.58,
+    "causa_raiz": "Caso validado de ejemplo asociado a Saturación Progresiva Del Sistema De Frío. Variables críticas observadas: (N2) Temperatura de sala (°C)=24.6 (N/A); (N2) Temperatura impulsión (°C)=23 (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Saturación Progresiva Del Sistema De Frío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:32:00.000Z",
@@ -1193,7 +1739,13 @@
     "tiempo": 49.53,
     "causa": "Caso validado de ejemplo asociado a Incremento Anómalo De Consumo. Variables críticas observadas: (N2) ΔP_filtro HEPA (Pa)=25 (Sube); (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Incremento Anómalo De Consumo) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Incremento Anómalo De Consumo) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 49.53,
+    "causa_raiz": "Caso validado de ejemplo asociado a Incremento Anómalo De Consumo. Variables críticas observadas: (N2) ΔP_filtro HEPA (Pa)=25 (Sube); (N1) Estado UPS=activo (Estable); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Incremento Anómalo De Consumo) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:33:00.000Z",
@@ -1206,7 +1758,13 @@
     "tiempo": 56.23,
     "causa": "Caso validado de ejemplo asociado a Pérdida Parcial De Variables Críticas. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Ajuste operativo BMS/HVAC",
-    "obs": "El CTI integra variables críticas del caso (Pérdida Parcial De Variables Críticas) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Pérdida Parcial De Variables Críticas) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Ajuste operativo BMS/HVAC",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 56.23,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida Parcial De Variables Críticas. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Ajuste operativo BMS/HVAC",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida Parcial De Variables Críticas) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:34:00.000Z",
@@ -1219,7 +1777,13 @@
     "tiempo": 69.85,
     "causa": "Caso validado de ejemplo asociado a Descenso De Presión En Condición Sostenida. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Descenso De Presión En Condición Sostenida) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Descenso De Presión En Condición Sostenida) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 69.85,
+    "causa_raiz": "Caso validado de ejemplo asociado a Descenso De Presión En Condición Sostenida. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Botella reserva=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Descenso De Presión En Condición Sostenida) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:35:00.000Z",
@@ -1232,7 +1796,13 @@
     "tiempo": 51.57,
     "causa": "Caso validado de ejemplo asociado a Pérdida De Estabilidad En Control De Aire. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Validación local de variables críticas",
-    "obs": "El CTI integra variables críticas del caso (Pérdida De Estabilidad En Control De Aire) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Pérdida De Estabilidad En Control De Aire) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Validación local de variables críticas",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 51.57,
+    "causa_raiz": "Caso validado de ejemplo asociado a Pérdida De Estabilidad En Control De Aire. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Validación local de variables críticas",
+    "observaciones": "El CTI integra variables críticas del caso (Pérdida De Estabilidad En Control De Aire) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:36:00.000Z",
@@ -1245,7 +1815,13 @@
     "tiempo": 43.97,
     "causa": "Caso validado de ejemplo asociado a Degradación Progresiva Del UPS. Variables críticas observadas: (N1) Estado UPS=degradado (N/A); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Conmutación a reserva disponible",
-    "obs": "El CTI integra variables críticas del caso (Degradación Progresiva Del UPS) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Degradación Progresiva Del UPS) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Conmutación a reserva disponible",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 43.97,
+    "causa_raiz": "Caso validado de ejemplo asociado a Degradación Progresiva Del UPS. Variables críticas observadas: (N1) Estado UPS=degradado (N/A); (N1) Estado ATS=activo (Estable); (N1) Línea emergencia=disponible (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Conmutación a reserva disponible",
+    "observaciones": "El CTI integra variables críticas del caso (Degradación Progresiva Del UPS) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:37:00.000Z",
@@ -1258,7 +1834,13 @@
     "tiempo": 55.87,
     "causa": "Caso validado de ejemplo asociado a Inestabilidad En Sistema De Vacío. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Inestabilidad En Sistema De Vacío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
+    "obs": "El CTI integra variables críticas del caso (Inestabilidad En Sistema De Vacío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 55.87,
+    "causa_raiz": "Caso validado de ejemplo asociado a Inestabilidad En Sistema De Vacío. Variables críticas observadas: (N1) Alarma central=intermitente (Oscila); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Inestabilidad En Sistema De Vacío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta."
   },
   {
     "fecha": "2026-04-30T12:38:00.000Z",
@@ -1271,7 +1853,13 @@
     "tiempo": 49.4,
     "causa": "Caso validado de ejemplo asociado a Intermitencia En Adquisición De Datos. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Intermitencia En Adquisición De Datos) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Intermitencia En Adquisición De Datos) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 49.4,
+    "causa_raiz": "Caso validado de ejemplo asociado a Intermitencia En Adquisición De Datos. Variables críticas observadas: (N1) Sonda redundante=disponible (Estable); (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Intermitencia En Adquisición De Datos) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:39:00.000Z",
@@ -1284,7 +1872,13 @@
     "tiempo": 55.63,
     "causa": "Caso validado de ejemplo asociado a Desviación Combinada De Variables Ambientales. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Desviación Combinada De Variables Ambientales) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Desviación Combinada De Variables Ambientales) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 55.63,
+    "causa_raiz": "Caso validado de ejemplo asociado a Desviación Combinada De Variables Ambientales. Variables críticas observadas: (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Desviación Combinada De Variables Ambientales) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   },
   {
     "fecha": "2026-04-30T12:40:00.000Z",
@@ -1297,6 +1891,12 @@
     "tiempo": 54.52,
     "causa": "Caso validado de ejemplo asociado a Saturación De Cpu Del Servidor. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
     "solucion": "Transferencia temporal a línea segura",
-    "obs": "El CTI integra variables críticas del caso (Saturación De Cpu Del Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
+    "obs": "El CTI integra variables críticas del caso (Saturación De Cpu Del Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
+    "alternativa_final": "Transferencia temporal a línea segura",
+    "funciono": "Sí",
+    "tiempo_real_total_min": 54.52,
+    "causa_raiz": "Caso validado de ejemplo asociado a Saturación De Cpu Del Servidor. Variables críticas observadas: (N1) Alarma central=activa (N/A); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable); (N1) Estado operativo contextual=Operativo (Estable)",
+    "solucion_real": "Transferencia temporal a línea segura",
+    "observaciones": "El CTI integra variables críticas del caso (Saturación De Cpu Del Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media."
   }
 ]
