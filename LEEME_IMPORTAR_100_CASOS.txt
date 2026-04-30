@@ -1,0 +1,11 @@
+CTI IA DSS PWA - versión limpia
+
+La app arranca sin casos resueltos cargados.
+
+Para cargar la demo de 100 casos:
+1. Abre index.html.
+2. Pulsa "Importar casos JSON".
+3. Selecciona CTI_IA_DSS_100_CASOS_RESUELTOS.json.
+4. La app guardará esos datos en el navegador.
+
+Para volver a una app vacía, pulsa "Vaciar sesión".
