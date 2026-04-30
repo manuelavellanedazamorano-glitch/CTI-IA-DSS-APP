@@ -1,4 +1,4 @@
-const CACHE='cti-ia-dss-v3-gpt-global';
+const CACHE='cti-ia-dss-v4-pro';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./app_data.js','./logo.png','./icon-192.png','./icon-512.png','./manifest.webmanifest'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));});
 self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));});
