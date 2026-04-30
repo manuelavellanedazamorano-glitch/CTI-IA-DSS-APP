@@ -1,7 +1,7 @@
 const DATA=window.CTI_APP_DATA||{};
 const EJEMPLO=window.CTI_SESION_EJEMPLO||{};
-const STORE='cti_ia_dss_pwa_session_v4_pro';
-const HIST='cti_ia_dss_pwa_historico_v4_pro';
+const STORE='cti_ia_dss_pwa_session_v5_hist';
+const HIST='cti_ia_dss_pwa_historico_v5_hist';
 const GPT_URL='https://chatgpt.com/g/g-69e24256e3188191b2ed26ffdbc017fe-asistente-decision-tecnica-hospitalaria';
 const TABS=['Instrucciones','Caso','Base','Propuesto','Prompt IA','Resultados caso','Resultados globales','Retroalimentación'];
 let current='1', tab='Instrucciones';
@@ -37,11 +37,11 @@ function parseCriterios(){let s=val('ia.Criterios_IA'); if(!s)return null; let a
 function currentCaseMeta(){let c=DATA.cases?.find(x=>String(x.id)==String(current));return c||{id:current,enunciado:''}}
 function similar(){let c=ensureCase();let sis=c.prop?.Sistema, ev=c.prop?.Evento;return historico.filter(h=>(!sis||h.sistema==sis)&&(!ev||h.evento==ev)).slice(-5).reverse()}
 function promptText(){let c=ensureCase(); let hist=similar().map((h,i)=>`Caso similar ${i+1}: solución=${h.solucion||h.alternativa||''}; funcionó=${h.resuelto||''}; tiempo=${h.tiempo||''} min; causa=${h.causa||''}`).join('\n'); return `Actúa como asistente de decisión técnica hospitalaria.\n\nENUNCIADO DEL CASO ${current}:\n${currentCaseMeta().enunciado}\n\nMÉTODO BASE:\n- d1: ${c.base.d1||''}\n- d2: ${c.base.d2||''}\n- d3: ${c.base.d3||''}\n- decisión base: ${c.base.Decision_base||''}\n- Ldec base: ${fmt(c.base.Ldec_base_min)} min\n- Ttotal base: ${fmt(c.base.Ttotal_base_min)} min\n\nCTI / MÉTODO PROPUESTO:\n- Sistema: ${c.prop.Sistema||''}\n- Evento: ${c.prop.Evento||''}\n- Criticidad: ${c.prop.Criticidad||''}\n- QX activo: ${c.prop.QX_activo||''}\n- Redundancia: ${c.prop.Redundancia||''}\n- SA: ${c.prop.SA||''}\n- Normativa: ${c.prop.Normativa||''}\n- Alternativas CTI: ${c.prop.d1_cti||''} | ${c.prop.d2_cti||''} | ${c.prop.d3_cti||''}\n\nVARIABLES:\n1. ${c.prop.Var1_nombre||''}: ${c.prop.Var1_valor||''} (${c.prop.Var1_tendencia||''})\n2. ${c.prop.Var2_nombre||''}: ${c.prop.Var2_valor||''} (${c.prop.Var2_tendencia||''})\n3. ${c.prop.Var3_nombre||''}: ${c.prop.Var3_valor||''} (${c.prop.Var3_tendencia||''})\n4. ${c.prop.Var4_nombre||''}: ${c.prop.Var4_valor||''} (${c.prop.Var4_tendencia||''})\n\nHISTÓRICO VALIDADO SIMILAR:\n${hist||'No hay histórico validado local para este caso.'}\n\nDevuelve: alternativa sugerida, justificación técnica, matriz C1,C2,C3,C4 para d1-d3 en escala compatible y resumen breve para completar el método propuesto.`}
-function init(){DATA.cases?.forEach(c=>{let o=document.createElement('option');o.value=c.id;o.textContent='Caso '+c.id; $('caseSelect').appendChild(o)}); $('caseSelect').value=current; $('caseSelect').onchange=e=>{saveAll();current=e.target.value;render()}; $('tabs').innerHTML=TABS.map(t=>`<button class="${t==tab?'active':''}" data-tab="${t}">${t}</button>`).join(''); $('tabs').onclick=e=>{if(e.target.dataset.tab){saveAll();tab=e.target.dataset.tab;renderTabs();render()}}; $('view').addEventListener('input',e=>{let p=e.target.dataset.path;if(p){setVal(p,e.target.value);liveUpdate()}}); $('view').addEventListener('change',e=>{let p=e.target.dataset.path;if(p){setVal(p,e.target.value);if(p.endsWith('d1')||p.endsWith('d2')||p.endsWith('d3'))render()}}); $('saveBtn').onclick=saveAll; $('exportBtn').onclick=exportSession; $('importBtn').onclick=()=>$('importFile').click(); let db=$('demoBtn'); if(db)db.onclick=loadDemo; $('importFile').onchange=importSession; let rb=$('resetBtn'); if(rb)rb.onclick=resetSession; render()}
+function init(){DATA.cases?.forEach(c=>{let o=document.createElement('option');o.value=c.id;o.textContent='Caso '+c.id; $('caseSelect').appendChild(o)}); $('caseSelect').value=current; $('caseSelect').onchange=e=>{saveAll();current=e.target.value;render()}; $('tabs').innerHTML=TABS.map(t=>`<button class="${t==tab?'active':''}" data-tab="${t}">${t}</button>`).join(''); $('tabs').onclick=e=>{if(e.target.dataset.tab){saveAll();tab=e.target.dataset.tab;renderTabs();render()}}; $('view').addEventListener('input',e=>{let p=e.target.dataset.path;if(p){setVal(p,e.target.value);liveUpdate()}}); $('view').addEventListener('change',e=>{let p=e.target.dataset.path;if(p){setVal(p,e.target.value);if(p.endsWith('d1')||p.endsWith('d2')||p.endsWith('d3'))render()}}); $('saveBtn').onclick=saveAll; $('exportBtn').onclick=exportSession; $('importBtn').onclick=()=>$('importFile').click(); let db=$('demoBtn'); if(db)db.onclick=loadDemo; let hb=$('histDemoBtn'); if(hb)hb.onclick=loadDemoHistorico; $('importFile').onchange=importSession; let rb=$('resetBtn'); if(rb)rb.onclick=resetSession; render()}
 function renderTabs(){$('tabs').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.tab==tab))}
 function liveUpdate(){document.querySelectorAll('[data-calc]').forEach(el=>{let v=val(el.dataset.calc);el.textContent=typeof v==='number'?fmt(v):v})}
 function render(){calcCase(false); renderTabs(); let html=''; if(tab==='Instrucciones')html=viewInstructions(); if(tab==='Caso')html=viewCaso(); if(tab==='Base')html=viewBase(); if(tab==='Propuesto')html=viewProp(); if(tab==='Prompt IA')html=viewPrompt(); if(tab==='Resultados caso')html=viewResultados(); if(tab==='Resultados globales')html=viewGlobal(); if(tab==='Retroalimentación')html=viewRetro(); $('view').innerHTML=html; bindSpecial();}
-function viewInstructions(){let rows=(DATA.instructions||[]).map(r=>Array.isArray(r)?r.filter(Boolean).join(' '):r).filter(Boolean);return `<div class="card"><h2>Protocolo operativo</h2><p><span class="bluehint">Azul</span> = rellena/valida el ingeniero. <span class="brownhint">Marrón</span> = calculado/programado.</p><div class="help"><b>Modo limpio:</b> la app arranca sin casos resueltos cargados. Para una demo con los 100 casos, pulsa <b>Cargar demo 100 casos</b>. También puedes usar <b>Importar casos JSON</b> si tienes un JSON externo. Quien no tenga ese JSON verá la aplicación vacía.</div>${rows.map(x=>`<p>${esc(x)}</p>`).join('')}</div>`}
+function viewInstructions(){let rows=(DATA.instructions||[]).map(r=>Array.isArray(r)?r.filter(Boolean).join(' '):r).filter(Boolean);return `<div class="card"><h2>Protocolo operativo</h2><p><span class="bluehint">Azul</span> = rellena/valida el ingeniero. <span class="brownhint">Marrón</span> = calculado/programado.</p><div class="help"><b>Modo limpio:</b> la app arranca sin casos resueltos cargados. Para una demo con los 100 casos, pulsa <b>Cargar demo 100 casos</b>. Para alimentar los prompts con aprendizaje previo, pulsa también <b>Cargar histórico demo 100</b>. También puedes usar <b>Importar casos JSON</b> si tienes un JSON externo. Quien no tenga ese JSON verá la aplicación vacía.</div>${rows.map(x=>`<p>${esc(x)}</p>`).join('')}</div>`}
 function viewCaso(){return `<div class="card"><h2>Caso ${current}</h2><div class="help">Selecciona el caso, lee el enunciado y completa Base → Propuesto → Prompt IA → Resultados.</div><pre>${esc(currentCaseMeta().enunciado)}</pre></div>`}
 function viewBase(){let c=ensureCase();let choices=[c.base.d1,c.base.d2,c.base.d3].filter(Boolean);return `<div class="card"><h2>Método base</h2><div class="grid"><div class="col-12">${field('d1','base.d1','textarea')}</div><div class="col-12">${field('d2','base.d2','textarea')}</div><div class="col-12">${field('d3','base.d3','textarea')}</div><div class="col-12">${field('Decisión base','base.Decision_base','text','edit',choices)}</div>${timeFields('base')}</div></div>${timeSummary('base')}`}
 function timeFields(scope){let s=scope==='base'?'base':'prop';let pref=scope==='base'?'base':'prop';return ['lcons','leval','lval','tint'].map(x=>`<div class="col-3">${field(labelTime(x)+' min',`${s}.${x}_${pref}_min`,'number')}</div><div class="col-3">${field(labelTime(x)+' seg',`${s}.${x}_${pref}_seg`,'number')}</div>`).join('')}
@@ -80,12 +80,38 @@ async function loadDemo(){
     session=obj.session||obj.casos||obj;
     if(!session||typeof session!=='object'||Array.isArray(session)) throw new Error('Formato no reconocido');
     localStorage.setItem(STORE,JSON.stringify(session));
+    // Carga también el histórico validado de ejemplo si está disponible.
+    try{
+      let rh=await fetch('./CTI_IA_DSS_100_HISTORICO_VALIDADO.json',{cache:'no-store'});
+      if(rh.ok){
+        let hobj=await rh.json();
+        historico=Array.isArray(hobj)?hobj:(hobj.historico||[]);
+        localStorage.setItem(HIST,JSON.stringify(historico));
+      }
+    }catch(_e){}
     current='1'; $('caseSelect').value=current; tab='Resultados globales';
-    render(); status('Demo de 100 casos cargada');
+    render(); status('Demo de 100 casos e histórico cargados');
   }catch(e){
     alert('No se pudo cargar la demo automáticamente. Usa “Importar casos JSON” y selecciona CTI_IA_DSS_100_CASOS_RESUELTOS.json.');
   }
 }
+
+async function loadDemoHistorico(){
+  if(!confirm('¿Cargar el histórico validado de ejemplo con 100 casos? Esto sustituirá el histórico local de este navegador.')) return;
+  try{
+    let res=await fetch('./CTI_IA_DSS_100_HISTORICO_VALIDADO.json',{cache:'no-store'});
+    if(!res.ok) throw new Error('No se pudo leer el histórico de demo');
+    let obj=await res.json();
+    historico=Array.isArray(obj)?obj:(obj.historico||[]);
+    if(!Array.isArray(historico)) throw new Error('Formato no reconocido');
+    localStorage.setItem(HIST,JSON.stringify(historico));
+    tab='Retroalimentación';
+    render(); status('Histórico demo cargado');
+  }catch(e){
+    alert('No se pudo cargar el histórico demo. Revisa que exista CTI_IA_DSS_100_HISTORICO_VALIDADO.json en GitHub.');
+  }
+}
+
 function importSession(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let obj=JSON.parse(r.result);session=obj.session||obj.casos||obj; if(!session||typeof session!=='object'||Array.isArray(session))throw new Error('Formato no reconocido'); saveAll();render();status('Sesión importada')}catch{alert('JSON no válido o no es una sesión CTI IA DSS')}};r.readAsText(f); e.target.value=''}
 function resetSession(){if(confirm('¿Vaciar la sesión local? Se eliminarán los datos introducidos en este navegador.')){session={};localStorage.removeItem(STORE);current='1';$('caseSelect').value=current;render();status('Sesión vacía')}}
 if('serviceWorker' in navigator){navigator.serviceWorker.register('./service-worker.js').catch(()=>{})}
