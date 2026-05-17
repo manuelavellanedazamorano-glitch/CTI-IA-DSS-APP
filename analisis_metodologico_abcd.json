@@ -6,10 +6,10 @@
     "D": 5
   },
   "descripcion": {
-    "A": "Misma decisión conceptual: mejora por menor Ldec; Tint igual.",
-    "B": "Decisión diferente: menor Tint y menor Ttotal.",
-    "C": "Decisión diferente: mayor Tint pero Ttotal menor/igual por menor Ldec.",
-    "D": "Decisión diferente: Ttotal mayor pero decisión más segura/robusta."
+    "A": "Misma decisión conceptual; mejora por menor Ldec y Tint equivalente.",
+    "B": "Decisión diferente con menor Tint y menor Ttotal.",
+    "C": "Decisión diferente con Tint mayor pero Ttotal menor o equivalente gracias a menor Ldec.",
+    "D": "Decisión diferente orientada a mayor seguridad/robustez aunque Ttotal aumente."
   },
   "metricas_globales": {
     "Ldec_base_medio": 22.26,
