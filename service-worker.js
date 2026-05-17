@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cti-ia-dss-v11-no-redondo';
+const CACHE_NAME = 'cti-ia-dss-v12-metodologia';
 const ASSETS = [
   './',
   'index.html',

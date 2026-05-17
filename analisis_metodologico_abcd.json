@@ -1,0 +1,20 @@
+{
+  "distribucion": {
+    "A": 37,
+    "B": 46,
+    "C": 12,
+    "D": 5
+  },
+  "descripcion": {
+    "A": "Misma decisión conceptual; mejora por menor Ldec y Tint equivalente.",
+    "B": "Decisión diferente con menor Tint y menor Ttotal.",
+    "C": "Decisión diferente con Tint mayor pero Ttotal menor o equivalente gracias a menor Ldec.",
+    "D": "Decisión diferente orientada a mayor seguridad/robustez aunque Ttotal aumente."
+  },
+  "metricas_globales": {
+    "Ldec_base_medio": 22.26,
+    "Ldec_propuesto_medio": 8.5,
+    "Ttotal_base_medio": 73.34,
+    "Ttotal_propuesto_medio": 51.73
+  }
+}
