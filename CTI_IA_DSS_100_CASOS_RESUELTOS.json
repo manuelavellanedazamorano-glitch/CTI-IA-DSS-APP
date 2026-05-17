@@ -1,10 +1,10 @@
 {
   "1": {
     "base": {
-      "d1": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "d2": "Esperar estabilización con seguimiento de presión, temperatura y caudal",
-      "d3": "Comprobar UTA, filtros y compuertas antes de intervenir",
-      "Decision_base": "Revisar climatización de la sala y ajustar parámetros manualmente",
+      "d1": "Conmutación parcial a UTA redundante",
+      "d2": "Ajuste manual de compuertas",
+      "d3": "Activación de protocolo asistencial",
+      "Decision_base": "Ajuste manual de compuertas",
       "lcons_base_min": "7",
       "lcons_base_seg": "37",
       "leval_base_min": "5",
@@ -48,8 +48,8 @@
       "leval_prop_seg": "28",
       "lval_prop_min": "0",
       "lval_prop_seg": "46",
-      "tint_prop_min": "30",
-      "tint_prop_seg": "16"
+      "tint_prop_min": "42",
+      "tint_prop_seg": "46"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -58,25 +58,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Presión Positiva) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "decision_propuesta_parametrizada": "Conmutación parcial a UTA redundante",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 12.93,
-      "delta_tint_min": 25.17,
-      "delta_ttotal_min": 38.1,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "2": {
     "base": {
-      "d1": "Reinicio controlado de comunicaciones",
-      "d2": "Validar localmente las señales antes de sustituir sensores",
-      "d3": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
-      "Decision_base": "Reinicio controlado de comunicaciones",
+      "d1": "Reinicio controlado de gateway/controlador",
+      "d2": "Bypass operativo con toma manual de variables",
+      "d3": "Esperar reintento automático con vigilancia",
+      "Decision_base": "Bypass operativo con toma manual de variables",
       "lcons_base_min": "9",
       "lcons_base_seg": "52",
       "leval_base_min": "4",
@@ -120,8 +109,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "4",
       "lval_prop_seg": "28",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "56"
+      "tint_prop_min": "45",
+      "tint_prop_seg": "26"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -130,25 +119,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Comunicación) y prioriza 'Reinicio controlado de gateway/controlador' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Reinicio controlado de comunicaciones",
-      "decision_propuesta_parametrizada": "Reinicio controlado de gateway/controlador",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 15.35,
-      "delta_tint_min": 22.8,
-      "delta_ttotal_min": 38.15,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "3": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "d2": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "d3": "Activar línea secundaria sin aislar causa raíz",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "12",
       "lcons_base_seg": "44",
       "leval_base_min": "6",
@@ -192,8 +170,8 @@
       "leval_prop_seg": "34",
       "lval_prop_min": "7",
       "lval_prop_seg": "41",
-      "tint_prop_min": "54",
-      "tint_prop_seg": "55"
+      "tint_prop_min": "50",
+      "tint_prop_seg": "43"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -202,25 +180,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.88,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.88,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "4": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: reinicio controlado del servidor bms",
+      "d1": "Reinicio controlado del servidor BMS",
       "d2": "Bypass operativo con toma manual de variables",
-      "d3": "Inhibición temporal de alarma con vigilancia",
-      "Decision_base": "Actuar en la misma línea técnica: reinicio controlado del servidor bms",
+      "d3": "Activar protocolo asistencial preventivo",
+      "Decision_base": "Bypass operativo con toma manual de variables",
       "lcons_base_min": "12",
       "lcons_base_seg": "29",
       "leval_base_min": "8",
@@ -264,8 +231,8 @@
       "leval_prop_seg": "55",
       "lval_prop_min": "2",
       "lval_prop_seg": "26",
-      "tint_prop_min": "46",
-      "tint_prop_seg": "50"
+      "tint_prop_min": "42",
+      "tint_prop_seg": "59"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -274,25 +241,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo De Servidor BMS) y prioriza 'Reinicio controlado del servidor BMS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: reinicio controlado del servidor bms",
-      "decision_propuesta_parametrizada": "Reinicio controlado del servidor BMS",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.33,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.33,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "5": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: validación cruzada con sonda redundante/local",
-      "d2": "Bypass operativo temporal con control manual de parámetros",
-      "d3": "Inhibición temporal de alarma con vigilancia",
-      "Decision_base": "Actuar en la misma línea técnica: validación cruzada con sonda redundante/local",
+      "d1": "Validación cruzada con sonda redundante/local",
+      "d2": "Sustitución inmediata de sonda",
+      "d3": "Inhibición temporal con monitorización manual",
+      "Decision_base": "Sustitución inmediata de sonda",
       "lcons_base_min": "8",
       "lcons_base_seg": "40",
       "leval_base_min": "7",
@@ -336,8 +292,8 @@
       "leval_prop_seg": "34",
       "lval_prop_min": "5",
       "lval_prop_seg": "55",
-      "tint_prop_min": "51",
-      "tint_prop_seg": "28"
+      "tint_prop_min": "46",
+      "tint_prop_seg": "46"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -346,25 +302,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Sensor Errático) y prioriza 'Validación cruzada con sonda redundante/local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación cruzada con sonda redundante/local",
-      "decision_propuesta_parametrizada": "Validación cruzada con sonda redundante/local",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.55,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.55,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "6": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: reintento manual de conmutación ats",
-      "d2": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "d3": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "Decision_base": "Actuar en la misma línea técnica: reintento manual de conmutación ats",
+      "d1": "Reintento manual de conmutación ATS",
+      "d2": "Bypass controlado a línea segura",
+      "d3": "Reinicio completo ATS diferido",
+      "Decision_base": "Bypass controlado a línea segura",
       "lcons_base_min": "11",
       "lcons_base_seg": "56",
       "leval_base_min": "7",
@@ -408,8 +353,8 @@
       "leval_prop_seg": "20",
       "lval_prop_min": "4",
       "lval_prop_seg": "54",
-      "tint_prop_min": "62",
-      "tint_prop_seg": "42"
+      "tint_prop_min": "58",
+      "tint_prop_seg": "6"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -418,25 +363,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo ATS) y prioriza 'Reintento manual de conmutación ATS' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: reintento manual de conmutación ats",
-      "decision_propuesta_parametrizada": "Reintento manual de conmutación ATS",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.47,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.47,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "7": {
     "base": {
-      "d1": "Mantener vigilancia ambiental y corregir setpoints desde BMS",
-      "d2": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "d3": "Inspeccionar filtros antes de conmutar equipo",
-      "Decision_base": "Mantener vigilancia ambiental y corregir setpoints desde BMS",
+      "d1": "Ajuste setpoint y válvula",
+      "d2": "Cambio de modo UTA + revisión batería",
+      "d3": "Activación de protocolo de pausa/limpieza",
+      "Decision_base": "Cambio de modo UTA + revisión batería",
       "lcons_base_min": "8",
       "lcons_base_seg": "36",
       "leval_base_min": "5",
@@ -480,8 +414,8 @@
       "leval_prop_seg": "48",
       "lval_prop_min": "0",
       "lval_prop_seg": "50",
-      "tint_prop_min": "28",
-      "tint_prop_seg": "11"
+      "tint_prop_min": "31",
+      "tint_prop_seg": "41"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -490,25 +424,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Temperatura Fuera De Rango) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Mantener vigilancia ambiental y corregir setpoints desde BMS",
-      "decision_propuesta_parametrizada": "Ajuste setpoint y válvula",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 13.85,
-      "delta_tint_min": 13.83,
-      "delta_ttotal_min": 27.68,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "8": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: activación de bomba redundante",
-      "d2": "Aislar rama sospechosa tras comprobación manual",
-      "d3": "Revisar tramo afectado y mantener vigilancia asistencial",
-      "Decision_base": "Actuar en la misma línea técnica: activación de bomba redundante",
+      "d1": "Activación de bomba redundante",
+      "d2": "Conmutación a línea secundaria de vacío",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Conmutación a línea secundaria de vacío",
       "lcons_base_min": "11",
       "lcons_base_seg": "19",
       "leval_base_min": "9",
@@ -552,8 +475,8 @@
       "leval_prop_seg": "59",
       "lval_prop_min": "3",
       "lval_prop_seg": "38",
-      "tint_prop_min": "49",
-      "tint_prop_seg": "11"
+      "tint_prop_min": "43",
+      "tint_prop_seg": "46"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -562,25 +485,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Vacío Medicinal / Aspiración) y prioriza 'Activación de bomba redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: activación de bomba redundante",
-      "decision_propuesta_parametrizada": "Activación de bomba redundante",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 12.4,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 12.4,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "9": {
     "base": {
-      "d1": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "d2": "Activar línea secundaria sin aislar causa raíz",
-      "d3": "Activar respaldo de suministro si la presión no se estabiliza",
-      "Decision_base": "Comprobar central de gases y confirmar presión en tomas críticas",
+      "d1": "Ajuste de regulador local",
+      "d2": "Conmutación a red secundaria",
+      "d3": "Monitorización reforzada con actuación diferida",
+      "Decision_base": "Conmutación a red secundaria",
       "lcons_base_min": "11",
       "lcons_base_seg": "16",
       "leval_base_min": "10",
@@ -624,8 +536,8 @@
       "leval_prop_seg": "51",
       "lval_prop_min": "4",
       "lval_prop_seg": "40",
-      "tint_prop_min": "59",
-      "tint_prop_seg": "52"
+      "tint_prop_min": "51",
+      "tint_prop_seg": "7"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -634,25 +546,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Oscilación De Aire Medicinal) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "decision_propuesta_parametrizada": "Ajuste de regulador local",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 20.78,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 17.78,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "10": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: búsqueda de defecto por ramas",
-      "d2": "Reinicio diferido del equipo eléctrico",
-      "d3": "Rearmar protección y observar comportamiento",
-      "Decision_base": "Actuar en la misma línea técnica: búsqueda de defecto por ramas",
+      "d1": "Búsqueda de defecto por ramas",
+      "d2": "Transferencia temporal a línea segura",
+      "d3": "Rearme local IMD con vigilancia",
+      "Decision_base": "Transferencia temporal a línea segura",
       "lcons_base_min": "15",
       "lcons_base_seg": "32",
       "leval_base_min": "9",
@@ -696,8 +597,8 @@
       "leval_prop_seg": "10",
       "lval_prop_min": "5",
       "lval_prop_seg": "44",
-      "tint_prop_min": "55",
-      "tint_prop_seg": "55"
+      "tint_prop_min": "50",
+      "tint_prop_seg": "4"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -706,25 +607,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Alarma IMD / Aislamiento) y prioriza 'Búsqueda de defecto por ramas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: búsqueda de defecto por ramas",
-      "decision_propuesta_parametrizada": "Búsqueda de defecto por ramas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 20.48,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 20.48,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "11": {
     "base": {
-      "d1": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
-      "d2": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "d3": "Bypass operativo temporal con control manual de parámetros",
-      "Decision_base": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "11",
       "lcons_base_seg": "57",
       "leval_base_min": "7",
@@ -768,8 +658,8 @@
       "leval_prop_seg": "8",
       "lval_prop_min": "0",
       "lval_prop_seg": "25",
-      "tint_prop_min": "59",
-      "tint_prop_seg": "11"
+      "tint_prop_min": "48",
+      "tint_prop_seg": "29"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -778,25 +668,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Aumento De Temperatura) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual.",
-      "delta_ldec_min": 16.95,
-      "delta_tint_min": -1.6,
-      "delta_ttotal_min": 15.35,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "12": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Modificar setpoint y esperar estabilización",
-      "d3": "Comprobar UTA, filtros y compuertas antes de intervenir",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "9",
       "lcons_base_seg": "18",
       "leval_base_min": "9",
@@ -840,8 +719,8 @@
       "leval_prop_seg": "41",
       "lval_prop_min": "5",
       "lval_prop_seg": "26",
-      "tint_prop_min": "47",
-      "tint_prop_seg": "1"
+      "tint_prop_min": "40",
+      "tint_prop_seg": "14"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -850,25 +729,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo De Suministro Eléctrico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.35,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.35,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "13": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación parcial a uta redundante",
-      "d2": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "d3": "Comprobar UTA, filtros y compuertas antes de intervenir",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación parcial a uta redundante",
+      "d1": "Conmutación parcial a UTA redundante",
+      "d2": "Ajuste manual de compuertas",
+      "d3": "Activación de protocolo asistencial",
+      "Decision_base": "Ajuste manual de compuertas",
       "lcons_base_min": "10",
       "lcons_base_seg": "55",
       "leval_base_min": "5",
@@ -912,8 +780,8 @@
       "leval_prop_seg": "52",
       "lval_prop_min": "5",
       "lval_prop_seg": "10",
-      "tint_prop_min": "37",
-      "tint_prop_seg": "27"
+      "tint_prop_min": "33",
+      "tint_prop_seg": "18"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -922,25 +790,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Caída De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación parcial a uta redundante",
-      "decision_propuesta_parametrizada": "Conmutación parcial a UTA redundante",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 12.87,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 12.87,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "14": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "d2": "Esperar reintento de comunicación manteniendo vigilancia local",
-      "d3": "Inhibición temporal de alarma con vigilancia",
-      "Decision_base": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "9",
       "lcons_base_seg": "3",
       "leval_base_min": "6",
@@ -984,8 +841,8 @@
       "leval_prop_seg": "10",
       "lval_prop_min": "0",
       "lval_prop_seg": "12",
-      "tint_prop_min": "60",
-      "tint_prop_seg": "13"
+      "tint_prop_min": "55",
+      "tint_prop_seg": "38"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -994,25 +851,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Monitorización) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 14.13,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 14.13,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "15": {
     "base": {
-      "d1": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "d2": "Rearmar protección y observar estabilidad del sistema",
-      "d3": "Rearmar protección y observar comportamiento",
-      "Decision_base": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "5",
       "lcons_base_seg": "56",
       "leval_base_min": "2",
@@ -1056,8 +902,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "6",
-      "tint_prop_min": "25",
-      "tint_prop_seg": "22"
+      "tint_prop_min": "28",
+      "tint_prop_seg": "52"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1066,25 +912,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 8.72,
-      "delta_tint_min": 18.82,
-      "delta_ttotal_min": 27.53,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "16": {
     "base": {
-      "d1": "Reinicio diferido del equipo eléctrico",
-      "d2": "Diagnóstico eléctrico por ramas antes de transferir carga",
-      "d3": "Rearmar protección y observar estabilidad del sistema",
-      "Decision_base": "Reinicio diferido del equipo eléctrico",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "12",
       "lcons_base_seg": "20",
       "leval_base_min": "5",
@@ -1128,8 +963,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "4",
       "lval_prop_seg": "59",
-      "tint_prop_min": "56",
-      "tint_prop_seg": "23"
+      "tint_prop_min": "25",
+      "tint_prop_seg": "59"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1138,25 +973,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Rendimiento Degradado UTA) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "D",
-      "decision_base_libre": "Reinicio diferido del equipo eléctrico",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; el propuesto prioriza seguridad/estabilidad sobre tiempo total",
-      "resultado_base_interpretado": "Base puede ser más rápida, pero con mayor riesgo residual, recurrencia o menor estabilidad",
-      "delta_ldec_min": 16.77,
-      "delta_tint_min": -17.97,
-      "delta_ttotal_min": -1.2,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "17": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "d2": "Esperar recuperación automática del sistema",
-      "d3": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "Decision_base": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "11",
       "lcons_base_seg": "1",
       "leval_base_min": "8",
@@ -1200,8 +1024,8 @@
       "leval_prop_seg": "34",
       "lval_prop_min": "5",
       "lval_prop_seg": "40",
-      "tint_prop_min": "52",
-      "tint_prop_seg": "37"
+      "tint_prop_min": "48",
+      "tint_prop_seg": "44"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1210,25 +1034,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (UPS En Bypass) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.42,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.42,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "18": {
     "base": {
-      "d1": "Validar localmente las señales antes de sustituir sensores",
-      "d2": "Bypass operativo temporal con control manual de parámetros",
-      "d3": "Esperar recuperación automática del sistema",
-      "Decision_base": "Validar localmente las señales antes de sustituir sensores",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "15",
       "lcons_base_seg": "38",
       "leval_base_min": "6",
@@ -1272,8 +1085,8 @@
       "leval_prop_seg": "23",
       "lval_prop_min": "2",
       "lval_prop_seg": "35",
-      "tint_prop_min": "47",
-      "tint_prop_seg": "40"
+      "tint_prop_min": "37",
+      "tint_prop_seg": "46"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1282,25 +1095,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Vacío Quirúrgico) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Validar localmente las señales antes de sustituir sensores",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 18.98,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 15.98,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "19": {
     "base": {
-      "d1": "Aislar rama sospechosa tras comprobación manual",
-      "d2": "Mantener suministro actual con monitorización reforzada",
-      "d3": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "Decision_base": "Aislar rama sospechosa tras comprobación manual",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "8",
       "lcons_base_seg": "37",
       "leval_base_min": "5",
@@ -1344,8 +1146,8 @@
       "leval_prop_seg": "30",
       "lval_prop_min": "7",
       "lval_prop_seg": "54",
-      "tint_prop_min": "37",
-      "tint_prop_seg": "11"
+      "tint_prop_min": "53",
+      "tint_prop_seg": "41"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1354,25 +1156,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Aislar rama sospechosa tras comprobación manual",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.52,
-      "delta_tint_min": 24.57,
-      "delta_ttotal_min": 35.08,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "20": {
     "base": {
-      "d1": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "d2": "Reinicio controlado de comunicaciones",
-      "d3": "Bypass operativo con toma manual de variables",
-      "Decision_base": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
+      "d1": "Segmentación temporal de tráfico crítico",
+      "d2": "Reinicio controlado de gateway/switch",
+      "d3": "Vigilancia reforzada hasta estabilización",
+      "Decision_base": "Reinicio controlado de gateway/switch",
       "lcons_base_min": "8",
       "lcons_base_seg": "37",
       "leval_base_min": "7",
@@ -1416,8 +1207,8 @@
       "leval_prop_seg": "19",
       "lval_prop_min": "4",
       "lval_prop_seg": "36",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "37"
+      "tint_prop_min": "37",
+      "tint_prop_seg": "46"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1426,25 +1217,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Saturación De Red De Comunicaciones) y prioriza 'Segmentación temporal de tráfico crítico' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "decision_propuesta_parametrizada": "Segmentación temporal de tráfico crítico",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 15.73,
-      "delta_tint_min": 12.1,
-      "delta_ttotal_min": 27.83,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "21": {
     "base": {
-      "d1": "Bypass operativo con toma manual de variables",
-      "d2": "Esperar recuperación automática del sistema",
-      "d3": "Reinicio controlado de comunicaciones",
-      "Decision_base": "Bypass operativo con toma manual de variables",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "10",
       "lcons_base_seg": "37",
       "leval_base_min": "5",
@@ -1488,8 +1268,8 @@
       "leval_prop_seg": "7",
       "lval_prop_min": "2",
       "lval_prop_seg": "39",
-      "tint_prop_min": "31",
-      "tint_prop_seg": "54"
+      "tint_prop_min": "45",
+      "tint_prop_seg": "47"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1498,25 +1278,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Humedad Fuera De Rango) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Bypass operativo con toma manual de variables",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.58,
-      "delta_tint_min": 20.63,
-      "delta_ttotal_min": 32.22,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "22": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "d2": "Bypass operativo temporal con control manual de parámetros",
-      "d3": "Bypass operativo con toma manual de variables",
-      "Decision_base": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "13",
       "lcons_base_seg": "17",
       "leval_base_min": "10",
@@ -1560,8 +1329,8 @@
       "leval_prop_seg": "41",
       "lval_prop_min": "0",
       "lval_prop_seg": "12",
-      "tint_prop_min": "42",
-      "tint_prop_seg": "26"
+      "tint_prop_min": "36",
+      "tint_prop_seg": "4"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1570,25 +1339,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (UPS En Estado Degradado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 19.43,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 19.43,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "23": {
     "base": {
-      "d1": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "d2": "Mantener vigilancia ambiental y corregir setpoints desde BMS",
-      "d3": "Comprobar UTA, filtros y compuertas antes de intervenir",
-      "Decision_base": "Revisar climatización de la sala y ajustar parámetros manualmente",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "13",
       "lcons_base_seg": "11",
       "leval_base_min": "7",
@@ -1632,8 +1390,8 @@
       "leval_prop_seg": "17",
       "lval_prop_min": "14",
       "lval_prop_seg": "29",
-      "tint_prop_min": "34",
-      "tint_prop_seg": "22"
+      "tint_prop_min": "50",
+      "tint_prop_seg": "52"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1642,25 +1400,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Inconsistencia De Lectura Ambiental) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.55,
-      "delta_tint_min": 23.68,
-      "delta_ttotal_min": 34.23,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "24": {
     "base": {
-      "d1": "Esperar recuperación automática del sistema",
-      "d2": "Validar localmente las señales antes de sustituir sensores",
-      "d3": "Esperar reintento de comunicación manteniendo vigilancia local",
-      "Decision_base": "Esperar recuperación automática del sistema",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "9",
       "lcons_base_seg": "43",
       "leval_base_min": "7",
@@ -1704,8 +1451,8 @@
       "leval_prop_seg": "51",
       "lval_prop_min": "1",
       "lval_prop_seg": "58",
-      "tint_prop_min": "60",
-      "tint_prop_seg": "13"
+      "tint_prop_min": "33",
+      "tint_prop_seg": "8"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1714,25 +1461,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Reserva Activa Por Caída De Presión O₂) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "D",
-      "decision_base_libre": "Esperar recuperación automática del sistema",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; el propuesto prioriza seguridad/estabilidad sobre tiempo total",
-      "resultado_base_interpretado": "Base puede ser más rápida, pero con mayor riesgo residual, recurrencia o menor estabilidad",
-      "delta_ldec_min": 14.58,
-      "delta_tint_min": -16.58,
-      "delta_ttotal_min": -2.0,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "25": {
     "base": {
-      "d1": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "d2": "Aislar tramo tras comprobaciones manuales prolongadas",
-      "d3": "Activar línea secundaria sin aislar causa raíz",
-      "Decision_base": "Comprobar reguladores, alarmas y consumo antes de actuar",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "9",
       "lcons_base_seg": "48",
       "leval_base_min": "9",
@@ -1776,8 +1512,8 @@
       "leval_prop_seg": "37",
       "lval_prop_min": "5",
       "lval_prop_seg": "22",
-      "tint_prop_min": "59",
-      "tint_prop_seg": "41"
+      "tint_prop_min": "31",
+      "tint_prop_seg": "17"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1786,25 +1522,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Saturación De Filtro Hepa) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "D",
-      "decision_base_libre": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; el propuesto prioriza seguridad/estabilidad sobre tiempo total",
-      "resultado_base_interpretado": "Base puede ser más rápida, pero con mayor riesgo residual, recurrencia o menor estabilidad",
-      "delta_ldec_min": 16.43,
-      "delta_tint_min": -18.23,
-      "delta_ttotal_min": -1.8,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "26": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "d2": "Activar respaldo de suministro si la presión no se estabiliza",
-      "d3": "Ajustar regulador local y observar presión",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "5",
       "lcons_base_seg": "17",
       "leval_base_min": "3",
@@ -1848,8 +1573,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "49",
-      "tint_prop_min": "55",
-      "tint_prop_seg": "56"
+      "tint_prop_min": "51",
+      "tint_prop_seg": "52"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1858,25 +1583,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Prealarma De Aislamiento It) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 10.67,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 10.67,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "27": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d1": "Validación local de variables críticas",
       "d2": "Reinicio controlado de comunicaciones",
-      "d3": "Bypass operativo temporal con control manual de parámetros",
-      "Decision_base": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "11",
       "lcons_base_seg": "28",
       "leval_base_min": "7",
@@ -1920,8 +1634,8 @@
       "leval_prop_seg": "49",
       "lval_prop_min": "1",
       "lval_prop_seg": "51",
-      "tint_prop_min": "48",
-      "tint_prop_seg": "44"
+      "tint_prop_min": "42",
+      "tint_prop_seg": "42"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -1930,25 +1644,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Vacío Inestable En Alta Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.48,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.48,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "28": {
     "base": {
-      "d1": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "d2": "Pasar carga a una línea alternativa si el estado lo permite",
-      "d3": "Revisar UPS/ATS y decidir actuación tras inspección manual",
-      "Decision_base": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "9",
       "lcons_base_seg": "39",
       "leval_base_min": "7",
@@ -1992,8 +1695,8 @@
       "leval_prop_seg": "40",
       "lval_prop_min": "3",
       "lval_prop_seg": "42",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "41"
+      "tint_prop_min": "41",
+      "tint_prop_seg": "11"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2002,25 +1705,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida Parcial De Supervisión) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 16.65,
-      "delta_tint_min": 17.6,
-      "delta_ttotal_min": 34.25,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "29": {
     "base": {
-      "d1": "Bypass operativo temporal con control manual de parámetros",
-      "d2": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "d3": "Inhibición temporal de alarma con vigilancia",
-      "Decision_base": "Bypass operativo temporal con control manual de parámetros",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "9",
       "lcons_base_seg": "41",
       "leval_base_min": "5",
@@ -2064,8 +1756,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "2",
       "lval_prop_seg": "22",
-      "tint_prop_min": "47",
-      "tint_prop_seg": "7"
+      "tint_prop_min": "36",
+      "tint_prop_seg": "34"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2074,25 +1766,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Retorno Térmico Elevado) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Bypass operativo temporal con control manual de parámetros",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 18.32,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 15.32,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "30": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste de regulador local",
-      "d2": "Aislar rama sospechosa tras comprobación manual",
-      "d3": "Activar línea secundaria sin aislar causa raíz",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste de regulador local",
+      "d1": "Ajuste de regulador local",
+      "d2": "Conmutación a red secundaria",
+      "d3": "Monitorización reforzada con actuación diferida",
+      "Decision_base": "Conmutación a red secundaria",
       "lcons_base_min": "8",
       "lcons_base_seg": "49",
       "leval_base_min": "5",
@@ -2136,8 +1817,8 @@
       "leval_prop_seg": "37",
       "lval_prop_min": "6",
       "lval_prop_seg": "20",
-      "tint_prop_min": "67",
-      "tint_prop_seg": "5"
+      "tint_prop_min": "61",
+      "tint_prop_seg": "34"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2146,25 +1827,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Calidad De Aire / VOC Fuera De Rango) y prioriza 'Ajuste de regulador local' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste de regulador local",
-      "decision_propuesta_parametrizada": "Ajuste de regulador local",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 15.8,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 15.8,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "31": {
     "base": {
-      "d1": "Mantener suministro actual con monitorización reforzada",
-      "d2": "Aislar tramo tras comprobaciones manuales prolongadas",
-      "d3": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "Decision_base": "Mantener suministro actual con monitorización reforzada",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "11",
       "lcons_base_seg": "57",
       "leval_base_min": "6",
@@ -2208,8 +1878,8 @@
       "leval_prop_seg": "52",
       "lval_prop_min": "3",
       "lval_prop_seg": "59",
-      "tint_prop_min": "29",
-      "tint_prop_seg": "45"
+      "tint_prop_min": "44",
+      "tint_prop_seg": "12"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2218,25 +1888,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Presión Diferencial Progresiva) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Mantener suministro actual con monitorización reforzada",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.3,
-      "delta_tint_min": 20.22,
-      "delta_ttotal_min": 31.52,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "32": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: bypass controlado a línea segura",
-      "d2": "Rearmar protección y observar estabilidad del sistema",
-      "d3": "Diagnóstico eléctrico por ramas antes de transferir carga",
-      "Decision_base": "Actuar en la misma línea técnica: bypass controlado a línea segura",
+      "d1": "Bypass controlado a línea segura",
+      "d2": "Revisión/rearme controlado UPS",
+      "d3": "Mantener vigilancia hasta fin de intervención",
+      "Decision_base": "Revisión/rearme controlado UPS",
       "lcons_base_min": "9",
       "lcons_base_seg": "59",
       "leval_base_min": "7",
@@ -2280,8 +1939,8 @@
       "leval_prop_seg": "4",
       "lval_prop_min": "2",
       "lval_prop_seg": "7",
-      "tint_prop_min": "50",
-      "tint_prop_seg": "35"
+      "tint_prop_min": "47",
+      "tint_prop_seg": "8"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2290,25 +1949,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Disparo Intermitente De UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: bypass controlado a línea segura",
-      "decision_propuesta_parametrizada": "Bypass controlado a línea segura",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.07,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.07,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "33": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "d2": "Pasar carga a una línea alternativa si el estado lo permite",
-      "d3": "Mantener alimentación actual con vigilancia",
-      "Decision_base": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "13",
       "lcons_base_seg": "19",
       "leval_base_min": "7",
@@ -2352,8 +2000,8 @@
       "leval_prop_seg": "11",
       "lval_prop_min": "4",
       "lval_prop_seg": "7",
-      "tint_prop_min": "56",
-      "tint_prop_seg": "52"
+      "tint_prop_min": "50",
+      "tint_prop_seg": "49"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2362,25 +2010,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Latencia Elevada En Comunicaciones) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.55,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.55,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "34": {
     "base": {
-      "d1": "Modificar setpoint y esperar estabilización",
-      "d2": "Mantener vigilancia ambiental y corregir setpoints desde BMS",
-      "d3": "Inspeccionar filtros antes de conmutar equipo",
-      "Decision_base": "Modificar setpoint y esperar estabilización",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "12",
       "lcons_base_seg": "18",
       "leval_base_min": "8",
@@ -2424,8 +2061,8 @@
       "leval_prop_seg": "19",
       "lval_prop_min": "8",
       "lval_prop_seg": "43",
-      "tint_prop_min": "33",
-      "tint_prop_seg": "3"
+      "tint_prop_min": "36",
+      "tint_prop_seg": "33"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2434,25 +2071,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Consumo Elevado De O₂) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Modificar setpoint y esperar estabilización",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 14.5,
-      "delta_tint_min": 15.27,
-      "delta_ttotal_min": 29.77,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "35": {
     "base": {
-      "d1": "Inspeccionar filtros antes de conmutar equipo",
-      "d2": "Modificar setpoint y esperar estabilización",
-      "d3": "Ajustar compuertas manualmente sin activar redundancia",
-      "Decision_base": "Inspeccionar filtros antes de conmutar equipo",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "9",
       "lcons_base_seg": "53",
       "leval_base_min": "3",
@@ -2496,8 +2122,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "0",
       "lval_prop_seg": "49",
-      "tint_prop_min": "55",
-      "tint_prop_seg": "13"
+      "tint_prop_min": "41",
+      "tint_prop_seg": "38"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2506,25 +2132,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo En Registro Histórico De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Inspeccionar filtros antes de conmutar equipo",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 17.32,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 14.32,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "36": {
     "base": {
-      "d1": "Ajustar regulador local y observar presión",
-      "d2": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "d3": "Mantener suministro actual con monitorización reforzada",
-      "Decision_base": "Ajustar regulador local y observar presión",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "9",
       "lcons_base_seg": "43",
       "leval_base_min": "7",
@@ -2568,8 +2183,8 @@
       "leval_prop_seg": "29",
       "lval_prop_min": "3",
       "lval_prop_seg": "34",
-      "tint_prop_min": "30",
-      "tint_prop_seg": "43"
+      "tint_prop_min": "43",
+      "tint_prop_seg": "13"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2578,25 +2193,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desequilibrio De Cargas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Ajustar regulador local y observar presión",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.38,
-      "delta_tint_min": 20.82,
-      "delta_ttotal_min": 31.2,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "37": {
     "base": {
-      "d1": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "d2": "Diagnóstico eléctrico por ramas antes de transferir carga",
-      "d3": "Pasar carga a una línea alternativa si el estado lo permite",
-      "Decision_base": "Mantener vigilancia del suministro mientras se localiza el defecto",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "6",
       "lcons_base_seg": "32",
       "leval_base_min": "5",
@@ -2640,8 +2244,8 @@
       "leval_prop_seg": "22",
       "lval_prop_min": "4",
       "lval_prop_seg": "59",
-      "tint_prop_min": "28",
-      "tint_prop_seg": "10"
+      "tint_prop_min": "31",
+      "tint_prop_seg": "40"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2650,25 +2254,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fuga Potencial En Circuito) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 12.75,
-      "delta_tint_min": 13.97,
-      "delta_ttotal_min": 26.72,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "38": {
     "base": {
-      "d1": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "d2": "Rearmar protección y observar estabilidad del sistema",
-      "d3": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "Decision_base": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "12",
       "lcons_base_seg": "23",
       "leval_base_min": "5",
@@ -2712,8 +2305,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "4",
       "lval_prop_seg": "2",
-      "tint_prop_min": "44",
-      "tint_prop_seg": "39"
+      "tint_prop_min": "32",
+      "tint_prop_seg": "37"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2722,25 +2315,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo Parcial De Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 17.42,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 14.42,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "39": {
     "base": {
-      "d1": "Esperar estabilización con seguimiento de presión, temperatura y caudal",
-      "d2": "Ajustar compuertas manualmente sin activar redundancia",
-      "d3": "Inspeccionar filtros antes de conmutar equipo",
-      "Decision_base": "Esperar estabilización con seguimiento de presión, temperatura y caudal",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "7",
       "lcons_base_seg": "47",
       "leval_base_min": "3",
@@ -2784,8 +2366,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "6",
       "lval_prop_seg": "23",
-      "tint_prop_min": "30",
-      "tint_prop_seg": "49"
+      "tint_prop_min": "39",
+      "tint_prop_seg": "19"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2794,25 +2376,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Caudal De Impulsión Reducido) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Esperar estabilización con seguimiento de presión, temperatura y caudal",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 12.08,
-      "delta_tint_min": 15.72,
-      "delta_ttotal_min": 27.8,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "40": {
     "base": {
-      "d1": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "d2": "Activar respaldo de suministro si la presión no se estabiliza",
-      "d3": "Mantener suministro actual con monitorización reforzada",
-      "Decision_base": "Comprobar central de gases y confirmar presión en tomas críticas",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "11",
       "lcons_base_seg": "12",
       "leval_base_min": "4",
@@ -2856,8 +2427,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "20",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "49"
+      "tint_prop_min": "41",
+      "tint_prop_seg": "19"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2866,25 +2437,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desincronización Horaria) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 15.43,
-      "delta_tint_min": 20.33,
-      "delta_ttotal_min": 35.77,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "41": {
     "base": {
-      "d1": "Inspeccionar filtros antes de conmutar equipo",
-      "d2": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "d3": "Comprobar UTA, filtros y compuertas antes de intervenir",
-      "Decision_base": "Inspeccionar filtros antes de conmutar equipo",
+      "d1": "Ajuste setpoint y válvula",
+      "d2": "Cambio de modo UTA + revisión batería",
+      "d3": "Activación de protocolo de pausa/limpieza",
+      "Decision_base": "Cambio de modo UTA + revisión batería",
       "lcons_base_min": "8",
       "lcons_base_seg": "35",
       "leval_base_min": "4",
@@ -2928,8 +2488,8 @@
       "leval_prop_seg": "54",
       "lval_prop_min": "2",
       "lval_prop_seg": "37",
-      "tint_prop_min": "28",
-      "tint_prop_seg": "42"
+      "tint_prop_min": "32",
+      "tint_prop_seg": "12"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -2938,25 +2498,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Aumento De Temperatura Con Bajo Caudal) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Inspeccionar filtros antes de conmutar equipo",
-      "decision_propuesta_parametrizada": "Ajuste setpoint y válvula",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 14.42,
-      "delta_tint_min": 13.9,
-      "delta_ttotal_min": 28.32,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "42": {
     "base": {
-      "d1": "Activar respaldo de suministro si la presión no se estabiliza",
-      "d2": "Activar línea secundaria sin aislar causa raíz",
-      "d3": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "Decision_base": "Activar respaldo de suministro si la presión no se estabiliza",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "5",
       "lcons_base_seg": "59",
       "leval_base_min": "3",
@@ -3000,8 +2549,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "2",
       "lval_prop_seg": "25",
-      "tint_prop_min": "31",
-      "tint_prop_seg": "14"
+      "tint_prop_min": "39",
+      "tint_prop_seg": "44"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3010,25 +2559,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Falla Parcial En Línea De Emergencia) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Activar respaldo de suministro si la presión no se estabiliza",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 12.4,
-      "delta_tint_min": 20.38,
-      "delta_ttotal_min": 32.78,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "43": {
     "base": {
-      "d1": "Inspeccionar filtros antes de conmutar equipo",
-      "d2": "Ajustar compuertas manualmente sin activar redundancia",
-      "d3": "Comprobar UTA, filtros y compuertas antes de intervenir",
-      "Decision_base": "Inspeccionar filtros antes de conmutar equipo",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "6",
       "lcons_base_seg": "1",
       "leval_base_min": "5",
@@ -3072,8 +2610,8 @@
       "leval_prop_seg": "44",
       "lval_prop_min": "1",
       "lval_prop_seg": "28",
-      "tint_prop_min": "31",
-      "tint_prop_seg": "29"
+      "tint_prop_min": "47",
+      "tint_prop_seg": "59"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3082,25 +2620,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Sincronización De Datos) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Inspeccionar filtros antes de conmutar equipo",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 12.82,
-      "delta_tint_min": 28.75,
-      "delta_ttotal_min": 41.57,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "44": {
     "base": {
-      "d1": "Inspeccionar filtros antes de conmutar equipo",
-      "d2": "Ajustar compuertas manualmente sin activar redundancia",
-      "d3": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "Decision_base": "Inspeccionar filtros antes de conmutar equipo",
+      "d1": "Conmutación parcial a UTA redundante",
+      "d2": "Ajuste manual de compuertas",
+      "d3": "Activación de protocolo asistencial",
+      "Decision_base": "Ajuste manual de compuertas",
       "lcons_base_min": "10",
       "lcons_base_seg": "14",
       "leval_base_min": "9",
@@ -3144,8 +2671,8 @@
       "leval_prop_seg": "42",
       "lval_prop_min": "1",
       "lval_prop_seg": "42",
-      "tint_prop_min": "42",
-      "tint_prop_seg": "42"
+      "tint_prop_min": "32",
+      "tint_prop_seg": "28"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3154,25 +2681,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Descenso Lento De Presión O₂) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Inspeccionar filtros antes de conmutar equipo",
-      "decision_propuesta_parametrizada": "Conmutación parcial a UTA redundante",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 19.08,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 16.08,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "45": {
     "base": {
-      "d1": "Bypass operativo temporal con control manual de parámetros",
-      "d2": "Validar localmente las señales antes de sustituir sensores",
-      "d3": "Esperar recuperación automática del sistema",
-      "Decision_base": "Bypass operativo temporal con control manual de parámetros",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "9",
       "lcons_base_seg": "17",
       "leval_base_min": "6",
@@ -3216,8 +2732,8 @@
       "leval_prop_seg": "14",
       "lval_prop_min": "0",
       "lval_prop_seg": "12",
-      "tint_prop_min": "31",
-      "tint_prop_seg": "47"
+      "tint_prop_min": "44",
+      "tint_prop_seg": "17"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3226,25 +2742,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Incremento De Δp En Filtro Sin Impacto Inmediato) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Bypass operativo temporal con control manual de parámetros",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 15.15,
-      "delta_tint_min": 22.98,
-      "delta_ttotal_min": 38.13,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "46": {
     "base": {
-      "d1": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "d2": "Bypass operativo con toma manual de variables",
-      "d3": "Bypass operativo temporal con control manual de parámetros",
-      "Decision_base": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "14",
       "lcons_base_seg": "26",
       "leval_base_min": "5",
@@ -3288,8 +2793,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "5",
       "lval_prop_seg": "41",
-      "tint_prop_min": "50",
-      "tint_prop_seg": "39"
+      "tint_prop_min": "37",
+      "tint_prop_seg": "14"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3298,25 +2803,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Sobrecarga Puntual Del Sistema) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 17.43,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 14.43,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "47": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Ajustar compuertas manualmente sin activar redundancia",
-      "d3": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "10",
       "lcons_base_seg": "33",
       "leval_base_min": "5",
@@ -3360,8 +2854,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "6",
       "lval_prop_seg": "15",
-      "tint_prop_min": "55",
-      "tint_prop_seg": "32"
+      "tint_prop_min": "48",
+      "tint_prop_seg": "45"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3370,25 +2864,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Oscilación De Vacío Medicinal) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 16.92,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 16.92,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "48": {
     "base": {
-      "d1": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "d2": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "d3": "Rearmar protección y observar comportamiento",
-      "Decision_base": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "13",
       "lcons_base_seg": "48",
       "leval_base_min": "8",
@@ -3432,8 +2915,8 @@
       "leval_prop_seg": "48",
       "lval_prop_min": "2",
       "lval_prop_seg": "59",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "53"
+      "tint_prop_min": "45",
+      "tint_prop_seg": "23"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3442,25 +2925,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Recuperación Parcial De Comunicación) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.22,
-      "delta_tint_min": 19.3,
-      "delta_ttotal_min": 30.52,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "49": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "d2": "Activar respaldo de suministro si la presión no se estabiliza",
-      "d3": "Revisar tramo afectado y mantener vigilancia asistencial",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "7",
       "lcons_base_seg": "14",
       "leval_base_min": "5",
@@ -3504,8 +2976,8 @@
       "leval_prop_seg": "36",
       "lval_prop_min": "1",
       "lval_prop_seg": "28",
-      "tint_prop_min": "60",
-      "tint_prop_seg": "15"
+      "tint_prop_min": "55",
+      "tint_prop_seg": "38"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3514,25 +2986,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Humedad Baja En Sala) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.18,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.18,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "50": {
     "base": {
-      "d1": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "d2": "Pasar carga a una línea alternativa si el estado lo permite",
-      "d3": "Revisar UPS/ATS y decidir actuación tras inspección manual",
-      "Decision_base": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "7",
       "lcons_base_seg": "58",
       "leval_base_min": "5",
@@ -3576,8 +3037,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "59",
-      "tint_prop_min": "31",
-      "tint_prop_seg": "44"
+      "tint_prop_min": "48",
+      "tint_prop_seg": "14"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3586,25 +3047,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo En Polling De Sensores) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 13.48,
-      "delta_tint_min": 25.25,
-      "delta_ttotal_min": 38.73,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "51": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "d2": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "d3": "Mantener suministro actual con monitorización reforzada",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "10",
       "lcons_base_seg": "58",
       "leval_base_min": "7",
@@ -3648,8 +3098,8 @@
       "leval_prop_seg": "57",
       "lval_prop_min": "2",
       "lval_prop_seg": "40",
-      "tint_prop_min": "51",
-      "tint_prop_seg": "45"
+      "tint_prop_min": "47",
+      "tint_prop_seg": "59"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3658,25 +3108,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Inestabilidad En Control De Temperatura) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.35,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.35,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "52": {
     "base": {
-      "d1": "Activar línea secundaria sin aislar causa raíz",
-      "d2": "Mantener suministro actual con monitorización reforzada",
-      "d3": "Cambiar a reserva local si persiste la alarma",
-      "Decision_base": "Activar línea secundaria sin aislar causa raíz",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "8",
       "lcons_base_seg": "32",
       "leval_base_min": "6",
@@ -3720,8 +3159,8 @@
       "leval_prop_seg": "40",
       "lval_prop_min": "4",
       "lval_prop_seg": "56",
-      "tint_prop_min": "33",
-      "tint_prop_seg": "16"
+      "tint_prop_min": "41",
+      "tint_prop_seg": "46"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3730,25 +3169,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Recuperación Inestable Tras Conmutación) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Activar línea secundaria sin aislar causa raíz",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.88,
-      "delta_tint_min": 16.95,
-      "delta_ttotal_min": 27.83,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "53": {
     "base": {
-      "d1": "Esperar reintento de comunicación manteniendo vigilancia local",
-      "d2": "Validar localmente las señales antes de sustituir sensores",
-      "d3": "Reinicio controlado de comunicaciones",
-      "Decision_base": "Esperar reintento de comunicación manteniendo vigilancia local",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "10",
       "lcons_base_seg": "19",
       "leval_base_min": "6",
@@ -3792,8 +3220,8 @@
       "leval_prop_seg": "32",
       "lval_prop_min": "0",
       "lval_prop_seg": "12",
-      "tint_prop_min": "28",
-      "tint_prop_seg": "5"
+      "tint_prop_min": "31",
+      "tint_prop_seg": "35"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3802,25 +3230,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Retardo En Actualización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Esperar reintento de comunicación manteniendo vigilancia local",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 16.13,
-      "delta_tint_min": 14.58,
-      "delta_ttotal_min": 30.72,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "54": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "d2": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "d3": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "Decision_base": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "12",
       "lcons_base_seg": "33",
       "leval_base_min": "5",
@@ -3864,8 +3281,8 @@
       "leval_prop_seg": "8",
       "lval_prop_min": "5",
       "lval_prop_seg": "2",
-      "tint_prop_min": "47",
-      "tint_prop_seg": "11"
+      "tint_prop_min": "43",
+      "tint_prop_seg": "35"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3874,25 +3291,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Activación Frecuente De Reserva) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 14.42,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 14.42,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "55": {
     "base": {
-      "d1": "Mantener alimentación actual con vigilancia",
-      "d2": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "d3": "Revisar UPS/ATS y decidir actuación tras inspección manual",
-      "Decision_base": "Mantener alimentación actual con vigilancia",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "7",
       "lcons_base_seg": "43",
       "leval_base_min": "6",
@@ -3936,8 +3342,8 @@
       "leval_prop_seg": "14",
       "lval_prop_min": "0",
       "lval_prop_seg": "12",
-      "tint_prop_min": "31",
-      "tint_prop_seg": "20"
+      "tint_prop_min": "43",
+      "tint_prop_seg": "50"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -3946,25 +3352,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Cola De Eventos Saturada) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Mantener alimentación actual con vigilancia",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 14.45,
-      "delta_tint_min": 23.53,
-      "delta_ttotal_min": 37.98,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "56": {
     "base": {
-      "d1": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "d2": "Rearmar protección y observar comportamiento",
-      "d3": "Mantener alimentación actual con vigilancia",
-      "Decision_base": "Mantener vigilancia del suministro mientras se localiza el defecto",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "11",
       "lcons_base_seg": "46",
       "leval_base_min": "10",
@@ -4008,8 +3403,8 @@
       "leval_prop_seg": "26",
       "lval_prop_min": "1",
       "lval_prop_seg": "29",
-      "tint_prop_min": "29",
-      "tint_prop_seg": "21"
+      "tint_prop_min": "45",
+      "tint_prop_seg": "51"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4018,25 +3413,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Oscilación De Tensión En Línea Principal) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 15.12,
-      "delta_tint_min": 27.53,
-      "delta_ttotal_min": 42.65,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "57": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "d2": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "d3": "Esperar reintento de comunicación manteniendo vigilancia local",
-      "Decision_base": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "11",
       "lcons_base_seg": "9",
       "leval_base_min": "5",
@@ -4080,8 +3464,8 @@
       "leval_prop_seg": "53",
       "lval_prop_min": "3",
       "lval_prop_seg": "36",
-      "tint_prop_min": "54",
-      "tint_prop_seg": "38"
+      "tint_prop_min": "48",
+      "tint_prop_seg": "21"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4090,25 +3474,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Disminución De Vacío En Demanda Variable) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.82,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.82,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "58": {
     "base": {
-      "d1": "Modificar setpoint y esperar estabilización",
-      "d2": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "d3": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "Decision_base": "Modificar setpoint y esperar estabilización",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "10",
       "lcons_base_seg": "31",
       "leval_base_min": "4",
@@ -4152,8 +3525,8 @@
       "leval_prop_seg": "26",
       "lval_prop_min": "1",
       "lval_prop_seg": "13",
-      "tint_prop_min": "29",
-      "tint_prop_seg": "35"
+      "tint_prop_min": "38",
+      "tint_prop_seg": "5"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4162,25 +3535,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida Temporal De Histórico) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad baja.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Modificar setpoint y esperar estabilización",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.52,
-      "delta_tint_min": 15.95,
-      "delta_ttotal_min": 27.47,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "59": {
     "base": {
-      "d1": "Modificar setpoint y esperar estabilización",
-      "d2": "Mantener UTA actual con vigilancia reforzada",
-      "d3": "Esperar estabilización con seguimiento de presión, temperatura y caudal",
-      "Decision_base": "Modificar setpoint y esperar estabilización",
+      "d1": "Ajuste setpoint y válvula",
+      "d2": "Cambio de modo UTA + revisión batería",
+      "d3": "Activación de protocolo de pausa/limpieza",
+      "Decision_base": "Cambio de modo UTA + revisión batería",
       "lcons_base_min": "10",
       "lcons_base_seg": "1",
       "leval_base_min": "4",
@@ -4224,8 +3586,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "5",
       "lval_prop_seg": "3",
-      "tint_prop_min": "69",
-      "tint_prop_seg": "38"
+      "tint_prop_min": "59",
+      "tint_prop_seg": "53"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4234,25 +3596,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desviación De Humedad Con Temperatura Estable) y prioriza 'Ajuste setpoint y válvula' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Modificar setpoint y esperar estabilización",
-      "decision_propuesta_parametrizada": "Ajuste setpoint y válvula",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual.",
-      "delta_ldec_min": 16.77,
-      "delta_tint_min": -1.6,
-      "delta_ttotal_min": 15.17,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "60": {
     "base": {
-      "d1": "Ajustar compuertas manualmente sin activar redundancia",
-      "d2": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "d3": "Mantener vigilancia ambiental y corregir setpoints desde BMS",
-      "Decision_base": "Ajustar compuertas manualmente sin activar redundancia",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "9",
       "lcons_base_seg": "34",
       "leval_base_min": "8",
@@ -4296,8 +3647,8 @@
       "leval_prop_seg": "32",
       "lval_prop_min": "2",
       "lval_prop_seg": "52",
-      "tint_prop_min": "28",
-      "tint_prop_seg": "48"
+      "tint_prop_min": "32",
+      "tint_prop_seg": "18"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4306,25 +3657,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Error En Escritura De Variables) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Ajustar compuertas manualmente sin activar redundancia",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.63,
-      "delta_tint_min": 10.68,
-      "delta_ttotal_min": 21.32,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "61": {
     "base": {
-      "d1": "Mantener suministro actual con monitorización reforzada",
-      "d2": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "d3": "Revisar tramo afectado y mantener vigilancia asistencial",
-      "Decision_base": "Mantener suministro actual con monitorización reforzada",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "8",
       "lcons_base_seg": "35",
       "leval_base_min": "5",
@@ -4368,8 +3708,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "5",
       "lval_prop_seg": "9",
-      "tint_prop_min": "28",
-      "tint_prop_seg": "52"
+      "tint_prop_min": "32",
+      "tint_prop_seg": "22"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4378,25 +3718,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema Térmico) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Mantener suministro actual con monitorización reforzada",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 15.08,
-      "delta_tint_min": 13.33,
-      "delta_ttotal_min": 28.42,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "62": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "d3": "Inspeccionar filtros antes de conmutar equipo",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "13",
       "lcons_base_seg": "16",
       "leval_base_min": "7",
@@ -4440,8 +3769,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "41",
-      "tint_prop_min": "46",
-      "tint_prop_seg": "14"
+      "tint_prop_min": "39",
+      "tint_prop_seg": "50"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4450,25 +3779,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Retardo En Conmutación ATS) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 19.48,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 19.48,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "63": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "d2": "Activar respaldo de suministro si la presión no se estabiliza",
-      "d3": "Mantener suministro actual con monitorización reforzada",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "7",
       "lcons_base_seg": "47",
       "leval_base_min": "5",
@@ -4512,8 +3830,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "2",
       "lval_prop_seg": "20",
-      "tint_prop_min": "64",
-      "tint_prop_seg": "32"
+      "tint_prop_min": "60",
+      "tint_prop_seg": "34"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4522,25 +3840,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Inconsistencia En Alarmas) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 14.18,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 14.18,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "64": {
     "base": {
-      "d1": "Bypass operativo temporal con control manual de parámetros",
-      "d2": "Comprobar gateway/controlador y registrar incidencia para seguimiento",
-      "d3": "Inhibición temporal de alarma con vigilancia",
-      "Decision_base": "Bypass operativo temporal con control manual de parámetros",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "6",
       "lcons_base_seg": "52",
       "leval_base_min": "3",
@@ -4584,8 +3891,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "1",
       "lval_prop_seg": "38",
-      "tint_prop_min": "30",
-      "tint_prop_seg": "53"
+      "tint_prop_min": "34",
+      "tint_prop_seg": "23"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4594,25 +3901,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Variación De Presión En Demanda) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Bypass operativo temporal con control manual de parámetros",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 12.72,
-      "delta_tint_min": 15.45,
-      "delta_ttotal_min": 28.17,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "65": {
     "base": {
-      "d1": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
-      "d2": "Validar localmente las señales antes de sustituir sensores",
-      "d3": "Comprobar gateway/controlador y registrar incidencia para seguimiento",
-      "Decision_base": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "7",
       "lcons_base_seg": "16",
       "leval_base_min": "3",
@@ -4656,8 +3952,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "28",
-      "tint_prop_min": "29",
-      "tint_prop_seg": "59"
+      "tint_prop_min": "38",
+      "tint_prop_seg": "29"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4666,25 +3962,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desajuste Entre Impulsión Y Retorno) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.67,
-      "delta_tint_min": 20.85,
-      "delta_ttotal_min": 31.52,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "66": {
     "base": {
-      "d1": "Pasar carga a una línea alternativa si el estado lo permite",
-      "d2": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "d3": "Rearmar protección y observar estabilidad del sistema",
-      "Decision_base": "Pasar carga a una línea alternativa si el estado lo permite",
+      "d1": "Bypass controlado a línea segura",
+      "d2": "Revisión/rearme controlado UPS",
+      "d3": "Mantener vigilancia hasta fin de intervención",
+      "Decision_base": "Revisión/rearme controlado UPS",
       "lcons_base_min": "8",
       "lcons_base_seg": "4",
       "leval_base_min": "5",
@@ -4728,8 +4013,8 @@
       "leval_prop_seg": "13",
       "lval_prop_min": "1",
       "lval_prop_seg": "29",
-      "tint_prop_min": "37",
-      "tint_prop_seg": "42"
+      "tint_prop_min": "54",
+      "tint_prop_seg": "12"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4738,24 +4023,13 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Falla Temporal Del UPS) y prioriza 'Bypass controlado a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Pasar carga a una línea alternativa si el estado lo permite",
-      "decision_propuesta_parametrizada": "Bypass controlado a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 9.45,
-      "delta_tint_min": 24.05,
-      "delta_ttotal_min": 33.5,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "67": {
     "base": {
-      "d1": "Reinicio controlado de comunicaciones",
-      "d2": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "d3": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
       "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "11",
       "lcons_base_seg": "19",
@@ -4800,8 +4074,8 @@
       "leval_prop_seg": "14",
       "lval_prop_min": "4",
       "lval_prop_seg": "59",
-      "tint_prop_min": "56",
-      "tint_prop_seg": "44"
+      "tint_prop_min": "35",
+      "tint_prop_seg": "52"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4810,25 +4084,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Respuesta Lenta Del Sistema De Vacío) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "D",
-      "decision_base_libre": "Reinicio controlado de comunicaciones",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; el propuesto prioriza seguridad/estabilidad sobre tiempo total",
-      "resultado_base_interpretado": "Base puede ser más rápida, pero con mayor riesgo residual, recurrencia o menor estabilidad",
-      "delta_ldec_min": 11.17,
-      "delta_tint_min": -13.47,
-      "delta_ttotal_min": -2.3,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "68": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Avisar a mantenimiento HVAC y realizar ajuste local en la instalación",
-      "d3": "Inspeccionar filtros antes de conmutar equipo",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "10",
       "lcons_base_seg": "51",
       "leval_base_min": "6",
@@ -4872,8 +4135,8 @@
       "leval_prop_seg": "14",
       "lval_prop_min": "3",
       "lval_prop_seg": "56",
-      "tint_prop_min": "55",
-      "tint_prop_seg": "4"
+      "tint_prop_min": "48",
+      "tint_prop_seg": "23"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4882,25 +4145,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Reinicio Espontáneo De Sistema) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 10.2,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 10.2,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "69": {
     "base": {
-      "d1": "Pasar carga a una línea alternativa si el estado lo permite",
-      "d2": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "d3": "Reinicio diferido del equipo eléctrico",
-      "Decision_base": "Pasar carga a una línea alternativa si el estado lo permite",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "11",
       "lcons_base_seg": "2",
       "leval_base_min": "6",
@@ -4944,8 +4196,8 @@
       "leval_prop_seg": "58",
       "lval_prop_min": "2",
       "lval_prop_seg": "29",
-      "tint_prop_min": "33",
-      "tint_prop_seg": "19"
+      "tint_prop_min": "49",
+      "tint_prop_seg": "49"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -4954,25 +4206,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Oscilación De Humedad Y Temperatura) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Pasar carga a una línea alternativa si el estado lo permite",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.68,
-      "delta_tint_min": 23.5,
-      "delta_ttotal_min": 35.18,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "70": {
     "base": {
-      "d1": "Cambiar a reserva local si persiste la alarma",
-      "d2": "Aislar rama sospechosa tras comprobación manual",
-      "d3": "Activar respaldo de suministro si la presión no se estabiliza",
-      "Decision_base": "Cambiar a reserva local si persiste la alarma",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "11",
       "lcons_base_seg": "18",
       "leval_base_min": "7",
@@ -5016,8 +4257,8 @@
       "leval_prop_seg": "47",
       "lval_prop_min": "0",
       "lval_prop_seg": "53",
-      "tint_prop_min": "29",
-      "tint_prop_seg": "44"
+      "tint_prop_min": "42",
+      "tint_prop_seg": "14"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5026,25 +4267,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Sincronización Con Dispositivos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Cambiar a reserva local si persiste la alarma",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.77,
-      "delta_tint_min": 20.23,
-      "delta_ttotal_min": 31.0,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "71": {
     "base": {
-      "d1": "Reinicio diferido del equipo eléctrico",
-      "d2": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "d3": "Revisar UPS/ATS y decidir actuación tras inspección manual",
-      "Decision_base": "Reinicio diferido del equipo eléctrico",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "11",
       "lcons_base_seg": "23",
       "leval_base_min": "7",
@@ -5088,8 +4318,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "1",
       "lval_prop_seg": "23",
-      "tint_prop_min": "51",
-      "tint_prop_seg": "52"
+      "tint_prop_min": "39",
+      "tint_prop_seg": "39"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5098,25 +4328,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desviación Térmica En Condiciones Estables) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Reinicio diferido del equipo eléctrico",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 17.0,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 14.0,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "72": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "d3": "Inspeccionar filtros antes de conmutar equipo",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "8",
       "lcons_base_seg": "11",
       "leval_base_min": "4",
@@ -5160,8 +4379,8 @@
       "leval_prop_seg": "8",
       "lval_prop_min": "5",
       "lval_prop_seg": "22",
-      "tint_prop_min": "62",
-      "tint_prop_seg": "43"
+      "tint_prop_min": "56",
+      "tint_prop_seg": "42"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5170,25 +4389,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Anomalía En Distribución De Carga) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.27,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.27,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "73": {
     "base": {
-      "d1": "Mantener suministro actual con monitorización reforzada",
-      "d2": "Revisar tramo afectado y mantener vigilancia asistencial",
-      "d3": "Aislar tramo tras comprobaciones manuales prolongadas",
-      "Decision_base": "Mantener suministro actual con monitorización reforzada",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "14",
       "lcons_base_seg": "5",
       "leval_base_min": "11",
@@ -5232,8 +4440,8 @@
       "leval_prop_seg": "46",
       "lval_prop_min": "2",
       "lval_prop_seg": "2",
-      "tint_prop_min": "46",
-      "tint_prop_seg": "4"
+      "tint_prop_min": "35",
+      "tint_prop_seg": "20"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5242,25 +4450,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Degradación Progresiva De Comunicaciones) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Mantener suministro actual con monitorización reforzada",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 18.77,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 15.77,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "74": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "d2": "Ajustar regulador local y observar presión",
-      "d3": "Aislar tramo tras comprobaciones manuales prolongadas",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "7",
       "lcons_base_seg": "18",
       "leval_base_min": "5",
@@ -5304,8 +4501,8 @@
       "leval_prop_seg": "4",
       "lval_prop_min": "2",
       "lval_prop_seg": "25",
-      "tint_prop_min": "59",
-      "tint_prop_seg": "51"
+      "tint_prop_min": "55",
+      "tint_prop_seg": "20"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5314,24 +4511,13 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Variación De Suministro En Pico De Demanda) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.57,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.57,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "75": {
     "base": {
-      "d1": "Reinicio controlado de comunicaciones",
-      "d2": "Revisar comunicación con BMS/SCADA y reiniciar si procede",
-      "d3": "Validar localmente las señales antes de sustituir sensores",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
       "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "9",
       "lcons_base_seg": "15",
@@ -5376,8 +4562,8 @@
       "leval_prop_seg": "2",
       "lval_prop_min": "8",
       "lval_prop_seg": "12",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "59"
+      "tint_prop_min": "41",
+      "tint_prop_seg": "29"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5386,25 +4572,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Inestabilidad En Caudal De Impulsión) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Reinicio controlado de comunicaciones",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.1,
-      "delta_tint_min": 16.63,
-      "delta_ttotal_min": 26.73,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "76": {
     "base": {
-      "d1": "Inhibición temporal de alarma con vigilancia",
-      "d2": "Esperar recuperación automática del sistema",
-      "d3": "Bypass operativo temporal con control manual de parámetros",
-      "Decision_base": "Inhibición temporal de alarma con vigilancia",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "12",
       "lcons_base_seg": "16",
       "leval_base_min": "8",
@@ -5448,8 +4623,8 @@
       "leval_prop_seg": "2",
       "lval_prop_min": "6",
       "lval_prop_seg": "41",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "24"
+      "tint_prop_min": "44",
+      "tint_prop_seg": "54"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5458,25 +4633,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Recuperación Parcial De Sistema UPS) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Inhibición temporal de alarma con vigilancia",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.78,
-      "delta_tint_min": 19.25,
-      "delta_ttotal_min": 31.03,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "77": {
     "base": {
-      "d1": "Ajustar compuertas manualmente sin activar redundancia",
-      "d2": "Avisar a mantenimiento HVAC y realizar ajuste local en la instalación",
-      "d3": "Mantener vigilancia ambiental y corregir setpoints desde BMS",
-      "Decision_base": "Ajustar compuertas manualmente sin activar redundancia",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "9",
       "lcons_base_seg": "53",
       "leval_base_min": "9",
@@ -5520,8 +4684,8 @@
       "leval_prop_seg": "58",
       "lval_prop_min": "5",
       "lval_prop_seg": "10",
-      "tint_prop_min": "63",
-      "tint_prop_seg": "38"
+      "tint_prop_min": "33",
+      "tint_prop_seg": "35"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5530,25 +4694,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Descenso Lento De Vacío) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "D",
-      "decision_base_libre": "Ajustar compuertas manualmente sin activar redundancia",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; el propuesto prioriza seguridad/estabilidad sobre tiempo total",
-      "resultado_base_interpretado": "Base puede ser más rápida, pero con mayor riesgo residual, recurrencia o menor estabilidad",
-      "delta_ldec_min": 16.08,
-      "delta_tint_min": -17.58,
-      "delta_ttotal_min": -1.5,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "78": {
     "base": {
-      "d1": "Mantener UTA actual con vigilancia reforzada",
-      "d2": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "d3": "Modificar setpoint y esperar estabilización",
-      "Decision_base": "Mantener UTA actual con vigilancia reforzada",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "9",
       "lcons_base_seg": "44",
       "leval_base_min": "5",
@@ -5592,8 +4745,8 @@
       "leval_prop_seg": "59",
       "lval_prop_min": "4",
       "lval_prop_seg": "3",
-      "tint_prop_min": "30",
-      "tint_prop_seg": "55"
+      "tint_prop_min": "43",
+      "tint_prop_seg": "25"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5602,25 +4755,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo Intermitente De Servidor) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Mantener UTA actual con vigilancia reforzada",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.1,
-      "delta_tint_min": 19.45,
-      "delta_ttotal_min": 30.55,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "79": {
     "base": {
-      "d1": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "d2": "Activar respaldo de suministro si la presión no se estabiliza",
-      "d3": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "Decision_base": "Comprobar reguladores, alarmas y consumo antes de actuar",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "9",
       "lcons_base_seg": "3",
       "leval_base_min": "3",
@@ -5664,8 +4806,8 @@
       "leval_prop_seg": "49",
       "lval_prop_min": "3",
       "lval_prop_seg": "9",
-      "tint_prop_min": "33",
-      "tint_prop_seg": "27"
+      "tint_prop_min": "49",
+      "tint_prop_seg": "57"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5674,25 +4816,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Variación De Humedad En Rango Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 9.47,
-      "delta_tint_min": 23.8,
-      "delta_ttotal_min": 33.27,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "80": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "d2": "Bypass operativo temporal con control manual de parámetros",
-      "d3": "Esperar recuperación automática del sistema",
-      "Decision_base": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "9",
       "lcons_base_seg": "53",
       "leval_base_min": "7",
@@ -5736,8 +4867,8 @@
       "leval_prop_seg": "32",
       "lval_prop_min": "7",
       "lval_prop_seg": "50",
-      "tint_prop_min": "49",
-      "tint_prop_seg": "17"
+      "tint_prop_min": "44",
+      "tint_prop_seg": "14"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5746,25 +4877,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fallo En Servicio De Alarmas) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 17.35,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 17.35,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "81": {
     "base": {
-      "d1": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "d2": "Activar línea secundaria sin aislar causa raíz",
-      "d3": "Aislar tramo tras comprobaciones manuales prolongadas",
-      "Decision_base": "Comprobar reguladores, alarmas y consumo antes de actuar",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "12",
       "lcons_base_seg": "11",
       "leval_base_min": "7",
@@ -5808,8 +4928,8 @@
       "leval_prop_seg": "49",
       "lval_prop_min": "9",
       "lval_prop_seg": "53",
-      "tint_prop_min": "30",
-      "tint_prop_seg": "13"
+      "tint_prop_min": "38",
+      "tint_prop_seg": "43"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5818,25 +4938,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Intermitencia En Base De Datos) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Comprobar reguladores, alarmas y consumo antes de actuar",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.4,
-      "delta_tint_min": 16.55,
-      "delta_ttotal_min": 27.95,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "82": {
     "base": {
-      "d1": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "d2": "Avisar a mantenimiento HVAC y realizar ajuste local en la instalación",
-      "d3": "Modificar setpoint y esperar estabilización",
-      "Decision_base": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "4",
       "lcons_base_seg": "59",
       "leval_base_min": "5",
@@ -5880,8 +4989,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "7",
-      "tint_prop_min": "27",
-      "tint_prop_seg": "54"
+      "tint_prop_min": "31",
+      "tint_prop_seg": "24"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5890,25 +4999,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desequilibrio Entre Líneas De Suministro) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.28,
-      "delta_tint_min": 17.68,
-      "delta_ttotal_min": 27.97,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "83": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "d3": "Avisar a mantenimiento HVAC y realizar ajuste local en la instalación",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "12",
       "lcons_base_seg": "57",
       "leval_base_min": "9",
@@ -5952,8 +5050,8 @@
       "leval_prop_seg": "34",
       "lval_prop_min": "2",
       "lval_prop_seg": "20",
-      "tint_prop_min": "57",
-      "tint_prop_seg": "2"
+      "tint_prop_min": "50",
+      "tint_prop_seg": "41"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -5962,25 +5060,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Latencia Variable En Monitorización) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 12.85,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 12.85,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "84": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: mantener línea de emergencia y verificar grupo",
-      "d2": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "d3": "Rearmar protección y observar comportamiento",
-      "Decision_base": "Actuar en la misma línea técnica: mantener línea de emergencia y verificar grupo",
+      "d1": "Mantener línea de emergencia y verificar grupo",
+      "d2": "Recuperación controlada de línea principal",
+      "d3": "Activar contingencia eléctrica preventiva",
+      "Decision_base": "Recuperación controlada de línea principal",
       "lcons_base_min": "13",
       "lcons_base_seg": "43",
       "leval_base_min": "8",
@@ -6024,8 +5111,8 @@
       "leval_prop_seg": "29",
       "lval_prop_min": "5",
       "lval_prop_seg": "12",
-      "tint_prop_min": "51",
-      "tint_prop_seg": "14"
+      "tint_prop_min": "45",
+      "tint_prop_seg": "34"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6034,25 +5121,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Respuesta Irregular Del Suministro O₂) y prioriza 'Mantener línea de emergencia y verificar grupo' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: mantener línea de emergencia y verificar grupo",
-      "decision_propuesta_parametrizada": "Mantener línea de emergencia y verificar grupo",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.82,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.82,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "85": {
     "base": {
-      "d1": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "d2": "Ajustar compuertas manualmente sin activar redundancia",
-      "d3": "Inspeccionar filtros antes de conmutar equipo",
-      "Decision_base": "Revisar climatización de la sala y ajustar parámetros manualmente",
+      "d1": "Conmutación parcial a UTA redundante",
+      "d2": "Ajuste manual de compuertas",
+      "d3": "Activación de protocolo asistencial",
+      "Decision_base": "Ajuste manual de compuertas",
       "lcons_base_min": "7",
       "lcons_base_seg": "0",
       "leval_base_min": "2",
@@ -6096,8 +5172,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "3",
       "lval_prop_seg": "17",
-      "tint_prop_min": "29",
-      "tint_prop_seg": "38"
+      "tint_prop_min": "33",
+      "tint_prop_seg": "8"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6106,25 +5182,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Variación De Presión Diferencial Sin Causa Clara) y prioriza 'Conmutación parcial a UTA redundante' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Revisar climatización de la sala y ajustar parámetros manualmente",
-      "decision_propuesta_parametrizada": "Conmutación parcial a UTA redundante",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.0,
-      "delta_tint_min": 20.0,
-      "delta_ttotal_min": 30.0,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "86": {
     "base": {
-      "d1": "Mantener suministro actual con monitorización reforzada",
-      "d2": "Cambiar a reserva local si persiste la alarma",
-      "d3": "Revisar tramo afectado y mantener vigilancia asistencial",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "9",
       "lcons_base_seg": "20",
       "leval_base_min": "6",
@@ -6168,8 +5233,8 @@
       "leval_prop_seg": "55",
       "lval_prop_min": "5",
       "lval_prop_seg": "16",
-      "tint_prop_min": "42",
-      "tint_prop_seg": "53"
+      "tint_prop_min": "36",
+      "tint_prop_seg": "22"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6178,25 +5243,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Recuperación Incompleta Tras Evento) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 10.87,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 10.87,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "87": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "d2": "Mantener alimentación actual con vigilancia",
-      "d3": "Rearmar protección y observar comportamiento",
-      "Decision_base": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "7",
       "lcons_base_seg": "22",
       "leval_base_min": "3",
@@ -6240,8 +5294,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "4",
       "lval_prop_seg": "13",
-      "tint_prop_min": "52",
-      "tint_prop_seg": "46"
+      "tint_prop_min": "47",
+      "tint_prop_seg": "5"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6250,25 +5304,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Fluctuación De Vacío En Operación Continua) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 9.9,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 9.9,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "88": {
     "base": {
-      "d1": "Bypass operativo temporal con control manual de parámetros",
-      "d2": "Tomar lectura manual de variables críticas hasta recuperar supervisión",
-      "d3": "Validar localmente las señales antes de sustituir sensores",
-      "Decision_base": "Actuar en la misma línea técnica: validación local de variables críticas",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "8",
       "lcons_base_seg": "12",
       "leval_base_min": "3",
@@ -6312,8 +5355,8 @@
       "leval_prop_seg": "35",
       "lval_prop_min": "1",
       "lval_prop_seg": "50",
-      "tint_prop_min": "40",
-      "tint_prop_seg": "54"
+      "tint_prop_min": "34",
+      "tint_prop_seg": "29"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6322,25 +5365,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desincronización De Variables) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: validación local de variables críticas",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.2,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.2,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "89": {
     "base": {
-      "d1": "Revisar UPS/ATS y decidir actuación tras inspección manual",
-      "d2": "Rearmar protección y observar estabilidad del sistema",
-      "d3": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "Decision_base": "Revisar UPS/ATS y decidir actuación tras inspección manual",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "8",
       "lcons_base_seg": "29",
       "leval_base_min": "4",
@@ -6384,8 +5416,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "9",
       "lval_prop_seg": "6",
-      "tint_prop_min": "30",
-      "tint_prop_seg": "35"
+      "tint_prop_min": "39",
+      "tint_prop_seg": "5"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6394,25 +5426,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Respuesta Irregular Del Control Higrométrico) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Revisar UPS/ATS y decidir actuación tras inspección manual",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 13.68,
-      "delta_tint_min": 18.2,
-      "delta_ttotal_min": 31.88,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "90": {
     "base": {
-      "d1": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "d2": "Activar línea secundaria sin aislar causa raíz",
-      "d3": "Aislar tramo tras comprobaciones manuales prolongadas",
-      "Decision_base": "Comprobar central de gases y confirmar presión en tomas críticas",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "6",
       "lcons_base_seg": "11",
       "leval_base_min": "3",
@@ -6456,8 +5477,8 @@
       "leval_prop_seg": "24",
       "lval_prop_min": "4",
       "lval_prop_seg": "28",
-      "tint_prop_min": "35",
-      "tint_prop_seg": "16"
+      "tint_prop_min": "51",
+      "tint_prop_seg": "46"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6466,25 +5487,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Operación En Condiciones Límite) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Comprobar central de gases y confirmar presión en tomas críticas",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 11.17,
-      "delta_tint_min": 24.9,
-      "delta_ttotal_min": 36.07,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "91": {
     "base": {
-      "d1": "Reinicio diferido del equipo eléctrico",
-      "d2": "Rearmar protección y observar comportamiento",
-      "d3": "Rearmar protección y observar estabilidad del sistema",
-      "Decision_base": "Reinicio diferido del equipo eléctrico",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "13",
       "lcons_base_seg": "12",
       "leval_base_min": "5",
@@ -6528,8 +5538,8 @@
       "leval_prop_seg": "46",
       "lval_prop_min": "5",
       "lval_prop_seg": "4",
-      "tint_prop_min": "33",
-      "tint_prop_seg": "8"
+      "tint_prop_min": "45",
+      "tint_prop_seg": "38"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6538,25 +5548,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Saturación Progresiva Del Sistema De Frío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Reinicio diferido del equipo eléctrico",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 14.27,
-      "delta_tint_min": 23.83,
-      "delta_ttotal_min": 38.1,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "92": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Comprobar UTA, filtros y compuertas antes de intervenir",
-      "d3": "Modificar setpoint y esperar estabilización",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "12",
       "lcons_base_seg": "28",
       "leval_base_min": "8",
@@ -6600,8 +5599,8 @@
       "leval_prop_seg": "5",
       "lval_prop_min": "2",
       "lval_prop_seg": "28",
-      "tint_prop_min": "43",
-      "tint_prop_seg": "4"
+      "tint_prop_min": "38",
+      "tint_prop_seg": "51"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6610,25 +5609,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Incremento Anómalo De Consumo) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 13.38,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 13.38,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "93": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "d2": "Mantener UTA actual con vigilancia reforzada",
-      "d3": "Aplicar actuación correctiva sobre ventilación sin cambiar modo general",
-      "Decision_base": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
+      "d1": "Ajuste operativo BMS/HVAC",
+      "d2": "Conmutación a redundancia disponible",
+      "d3": "Protocolo asistencial preventivo",
+      "Decision_base": "Conmutación a redundancia disponible",
       "lcons_base_min": "14",
       "lcons_base_seg": "8",
       "leval_base_min": "5",
@@ -6672,8 +5660,8 @@
       "leval_prop_seg": "12",
       "lval_prop_min": "4",
       "lval_prop_seg": "10",
-      "tint_prop_min": "57",
-      "tint_prop_seg": "46"
+      "tint_prop_min": "51",
+      "tint_prop_seg": "28"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6682,25 +5670,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida Parcial De Variables Críticas) y prioriza 'Ajuste operativo BMS/HVAC' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: ajuste operativo bms/hvac",
-      "decision_propuesta_parametrizada": "Ajuste operativo BMS/HVAC",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 21.22,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 21.22,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "94": {
     "base": {
-      "d1": "Aislar rama sospechosa tras comprobación manual",
-      "d2": "Ajustar regulador local y observar presión",
-      "d3": "Cambiar a reserva local si persiste la alarma",
-      "Decision_base": "Aislar rama sospechosa tras comprobación manual",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "16",
       "lcons_base_seg": "20",
       "leval_base_min": "9",
@@ -6744,8 +5721,8 @@
       "leval_prop_seg": "1",
       "lval_prop_min": "8",
       "lval_prop_seg": "46",
-      "tint_prop_min": "32",
-      "tint_prop_seg": "12"
+      "tint_prop_min": "44",
+      "tint_prop_seg": "42"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6754,25 +5731,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Descenso De Presión En Condición Sostenida) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Aislar rama sospechosa tras comprobación manual",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 9.97,
-      "delta_tint_min": 20.52,
-      "delta_ttotal_min": 30.48,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "95": {
     "base": {
-      "d1": "Esperar recuperación automática del sistema",
-      "d2": "Bypass operativo temporal con control manual de parámetros",
-      "d3": "Comprobar gateway/controlador y registrar incidencia para seguimiento",
-      "Decision_base": "Esperar recuperación automática del sistema",
+      "d1": "Validación local de variables críticas",
+      "d2": "Reinicio controlado de comunicaciones",
+      "d3": "Bypass operativo temporal",
+      "Decision_base": "Reinicio controlado de comunicaciones",
       "lcons_base_min": "9",
       "lcons_base_seg": "1",
       "leval_base_min": "6",
@@ -6816,8 +5782,8 @@
       "leval_prop_seg": "11",
       "lval_prop_min": "2",
       "lval_prop_seg": "14",
-      "tint_prop_min": "31",
-      "tint_prop_seg": "5"
+      "tint_prop_min": "43",
+      "tint_prop_seg": "35"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6826,25 +5792,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Pérdida De Estabilidad En Control De Aire) y prioriza 'Validación local de variables críticas' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Esperar recuperación automática del sistema",
-      "decision_propuesta_parametrizada": "Validación local de variables críticas",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 10.15,
-      "delta_tint_min": 19.72,
-      "delta_ttotal_min": 29.87,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "96": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "d2": "Ajustar regulador local y observar presión",
-      "d3": "Mantener suministro actual con monitorización reforzada",
-      "Decision_base": "Actuar en la misma línea técnica: conmutación a reserva disponible",
+      "d1": "Conmutación a reserva disponible",
+      "d2": "Activación de línea secundaria",
+      "d3": "Aislamiento del tramo afectado",
+      "Decision_base": "Activación de línea secundaria",
       "lcons_base_min": "10",
       "lcons_base_seg": "58",
       "leval_base_min": "8",
@@ -6888,8 +5843,8 @@
       "leval_prop_seg": "35",
       "lval_prop_min": "0",
       "lval_prop_seg": "12",
-      "tint_prop_min": "46",
-      "tint_prop_seg": "49"
+      "tint_prop_min": "41",
+      "tint_prop_seg": "28"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6898,25 +5853,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Degradación Progresiva Del UPS) y prioriza 'Conmutación a reserva disponible' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: conmutación a reserva disponible",
-      "decision_propuesta_parametrizada": "Conmutación a reserva disponible",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 19.45,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 19.45,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "97": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "d2": "Reinicio diferido del equipo eléctrico",
-      "d3": "Rearmar protección y observar estabilidad del sistema",
-      "Decision_base": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "8",
       "lcons_base_seg": "51",
       "leval_base_min": "5",
@@ -6960,8 +5904,8 @@
       "leval_prop_seg": "52",
       "lval_prop_min": "3",
       "lval_prop_seg": "44",
-      "tint_prop_min": "55",
-      "tint_prop_seg": "21"
+      "tint_prop_min": "50",
+      "tint_prop_seg": "58"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -6970,25 +5914,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Inestabilidad En Sistema De Vacío) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad alta.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 15.05,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 15.05,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "98": {
     "base": {
-      "d1": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "d2": "Solicitar apoyo eléctrico y aislar parcialmente el circuito sospechoso",
-      "d3": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "Decision_base": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "5",
       "lcons_base_seg": "38",
       "leval_base_min": "5",
@@ -7032,8 +5965,8 @@
       "leval_prop_seg": "42",
       "lval_prop_min": "0",
       "lval_prop_seg": "45",
-      "tint_prop_min": "53",
-      "tint_prop_seg": "16"
+      "tint_prop_min": "46",
+      "tint_prop_seg": "45"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -7042,25 +5975,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Intermitencia En Adquisición De Datos) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "A",
-      "decision_base_libre": "Actuar en la misma línea técnica: transferencia temporal a línea segura",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "Misma decisión conceptual; Tint idéntico por coherencia metodológica",
-      "resultado_base_interpretado": "Misma decisión conceptual; la mejora procede exclusivamente de menor Ldec.",
-      "delta_ldec_min": 11.32,
-      "delta_tint_min": 0.0,
-      "delta_ttotal_min": 11.32,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "99": {
     "base": {
-      "d1": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "d2": "Revisar UPS/ATS y decidir actuación tras inspección manual",
-      "d3": "Comprobar cuadro eléctrico y restablecer alimentación si procede",
-      "Decision_base": "Mantener vigilancia del suministro mientras se localiza el defecto",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "11",
       "lcons_base_seg": "8",
       "leval_base_min": "7",
@@ -7104,8 +6026,8 @@
       "leval_prop_seg": "52",
       "lval_prop_min": "0",
       "lval_prop_seg": "12",
-      "tint_prop_min": "64",
-      "tint_prop_seg": "6"
+      "tint_prop_min": "53",
+      "tint_prop_seg": "22"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -7114,25 +6036,14 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Desviación Combinada De Variables Ambientales) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "C",
-      "decision_base_libre": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; el propuesto tarda más en intervención pero compensa por menor Ldec",
-      "resultado_base_interpretado": "Base más rápida en intervención, pero menos robusta; el propuesto mantiene Ttotal menor/igual",
-      "delta_ldec_min": 18.08,
-      "delta_tint_min": -3.0,
-      "delta_ttotal_min": 15.08,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   },
   "100": {
     "base": {
-      "d1": "Rearmar protección y observar comportamiento",
-      "d2": "Diagnóstico eléctrico por ramas antes de transferir carga",
-      "d3": "Mantener vigilancia del suministro mientras se localiza el defecto",
-      "Decision_base": "Rearmar protección y observar comportamiento",
+      "d1": "Transferencia temporal a línea segura",
+      "d2": "Diagnóstico eléctrico por ramas",
+      "d3": "Vigilancia reforzada del suministro",
+      "Decision_base": "Diagnóstico eléctrico por ramas",
       "lcons_base_min": "13",
       "lcons_base_seg": "58",
       "leval_base_min": "9",
@@ -7176,8 +6087,8 @@
       "leval_prop_seg": "6",
       "lval_prop_min": "8",
       "lval_prop_seg": "29",
-      "tint_prop_min": "29",
-      "tint_prop_seg": "37"
+      "tint_prop_min": "38",
+      "tint_prop_seg": "7"
     },
     "ia": {
       "Uso_prompt_IA": "Sí",
@@ -7186,17 +6097,6 @@
     },
     "base_obs": "",
     "ia_summary": "El CTI integra variables críticas del caso (Saturación De Cpu Del Servidor) y prioriza 'Transferencia temporal a línea segura' por menor latencia decisional, menor exposición operativa y coherencia con la criticidad media.",
-    "prompt": "",
-    "analisis_metodologico": {
-      "tipo_escenario": "B",
-      "decision_base_libre": "Rearmar protección y observar comportamiento",
-      "decision_propuesta_parametrizada": "Transferencia temporal a línea segura",
-      "equivalencia_decisional": "No equivalente; alternativa heurística menos eficiente",
-      "resultado_base_interpretado": "Resuelve peor o de forma menos eficiente; el propuesto reduce Ldec, Tint y Ttotal",
-      "delta_ldec_min": 16.03,
-      "delta_tint_min": 19.12,
-      "delta_ttotal_min": 35.15,
-      "justificacion": "Base libre/no parametrizado frente a propuesto estructurado CTI–IA–MCDM."
-    }
+    "prompt": ""
   }
 }

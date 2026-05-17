@@ -1,0 +1,22 @@
+CTI IA DSS — PWA v9 AHP protegido
+
+Cambios:
+- En modo normal NO se muestran los valores de pesos AHP.
+- Se muestra solo: "AHP activo: pesos internos aplicados según sistema".
+- Nueva configuración avanzada protegida por contraseña.
+- Contraseña inicial: cti2026
+- En modo avanzado se pueden ver y modificar los pesos por sistema.
+- Se puede cambiar la contraseña.
+- Se puede restaurar la configuración original del XLSX.
+- La configuración se guarda localmente en el navegador mediante localStorage.
+
+Archivos a subir/reemplazar en GitHub Pages:
+- index.html
+- app.js
+- styles.css
+- service-worker.js
+
+Recomendado: subir todo el contenido de esta carpeta para evitar desfases.
+
+Nota de seguridad:
+En GitHub Pages la contraseña es una barrera operativa/visual, no seguridad criptográfica real. Para protección real sería necesario backend privado.
